@@ -107,26 +107,95 @@
       </div>
     </section>
     <section class="advantages">
-      <p class="advantages__marker marker">Преимущества</p>
-      <h2 class="advantages__title">Главные причины выбрать Drink2Go</h2>
+      <h2 class="advantages__title marker">Преимущества</h2>
+      <h3 class="advantages__sub-title">Главные причины выбрать Drink2Go</h3>
       <ul class="advantage__list">
         <li class="advantages__item advantages__item--speed">
-          <h3 class="advantages__item-title">Скорость</h3>
+          <p class="advantages__item-title">Скорость</p>
           <p class="advantages__item-description">Готовый напиток всегда под рукой — просто открой банку</p>
         </li>
         <li class="advantages__item advantages__item--convenience">
-          <h3 class="advantages__item-title">Удобство</h3>
+          <p class="advantages__item-title">Удобство</p>
           <p class="advantages__item-description">Легко помещается и в карман,и в маленькую сумочку</p>
         </li>
         <li class="advantages__item advantages__item--energy">
-          <h3 class="advantages__item-title">Бодрость</h3>
+          <p class="advantages__item-title">Бодрость</p>
           <p class="advantages__item-description">Сбалансированная доза кофеина даст мощный заряд энергии</p>
         </li>
         <li class="advantages__item advantages__item--eco">
-          <h3 class="advantages__item-title">Экологичность</h3>
+          <p class="advantages__item-title">Экологичность</p>
           <p class="advantages__item-description">Вся упаковка сделана из перерабатываемых материалов</p>
         </li>
       </ul>
+    </section>
+    <section class="catalog-form">
+      <h2 class="catalog__title marker">Каталог</h2>
+      <h3 class="catalog__sub-title">Главные причины выбрать Drink2Go</h3>
+      <form class="catalog__form" action="https://echo.htmlacademy.ru" method="post">
+        <fieldset class="catalog__form-fieldset catalog__form-fieldset--price">
+          <legend class="catalog__form-title">Цена</legend>
+          <label class="visually-hidden" for="price">Выбор цены</label>
+          <input class="catalog__form-value" id="price" type="number" step="any" name="catalog-price-value" value="#">
+          <div class="catalog__form-slider"></div>
+          <div class="catalog__form-input-group">
+            <label class="visually-hidden" for="price-from">Цена от</label>
+            <input class="catalog__form-input-number" type="number" id="price-from" name="price-from">
+            <label class="visually-hidden" for="price-to">Цена до</label>
+            <input class="catalog__input-number" type="number" id="price-to" name="price-to">
+          </div>
+        </fieldset>
+        <fieldset class="catalog__form-fieldset catalog__form-fieldset--milk-presence">
+          <legend class="catalog__form-title">Наличие молока</legend>
+          <ul class="catalog__milk-presence-list">
+            <li class="catalog__milk-presence-list">
+              <label class="catalog__form-title" for="any-milk">Неважно</label>
+              <input class="catalog__input-radio" type="radio" id="any-milk" name="milk" value="any-milk">
+            </li>
+            <li class="catalog__milk-presence-list">
+              <label class="catalog__form-title" for="animal">Только животное</label>
+              <input class="catalog__input-radio" type="radio" id="animal" name="milk" value="animal">
+            </li>
+            <li class="catalog__milk-presence-list">
+              <label class="catalog__form-title" for="vegetable">Только растительное</label>
+              <input class="catalog__input-radio" type="radio" id="vegetable" name="milk" value="vegetable">
+            </li>
+            <li class="catalog__milk-presence-list">
+              <label class="catalog__form-title" for="without-milk">Без молока</label>
+              <input class="catalog__input-radio" type="radio" id="without-milk" name="milk" value="without-milk"
+                disabled>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="catalog__form-fieldset catalog__form-fieldset--country">
+          <legend class="catalog__form-title">Страна произрастания</legend>
+          <ul class="catalog__country-list">
+            <li class="catalog__country-item">
+              <label class="catalog__form-title" for="brazil">Бразилия</label>
+              <input class="catalog__input-switch" type="checkbox" id="brazil" name="Brazil">
+            </li>
+            <li class="catalog__country-item">
+              <label class="catalog__form-title" for="ethiopia">Эфиопия</label>
+              <input class="catalog__input-switch" type="checkbox" id="ethiopia" name="Ethiopia">
+            </li>
+            <li class="catalog__country-item">
+              <label class="catalog__form-title" for="colombia">Колумбия</label>
+              <input class="catalog__input-switch" type="checkbox" id="colombia" name="Colombia">
+            </li>
+            <li class="catalog__country-item">
+              <label class="catalog__form-title" for="costa-rica">Коста-Рика</label>
+              <input class="catalog__input-switch" type="checkbox" id="costa-rica" name="Costa-Rica">
+            </li>
+            <li class="catalog__country-item">
+              <label class="catalog__form-title" for="peru">Бразилия</label>
+              <input class="catalog__input-switch" type="checkbox" id="peru" name="Peru" disabled>
+            </li>
+          </ul>
+        </fieldset>
+        <div class="catalog__form-button-group">
+          <button class="button" type="submit">Применить</button>
+          <button class="button button-secondary" type="reset">Сбросить</button>
+        </div>
+      </form>
     </section>
   </main>
 </body>

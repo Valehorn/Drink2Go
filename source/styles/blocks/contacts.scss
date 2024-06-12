@@ -1,0 +1,29 @@
+@use "../common/variables.scss";
+
+.contacts__link {
+  --contacs-link: 0;
+
+  position: relative;
+
+  &::before {
+    position: absolute;
+    left: -15px;
+    content: "";
+    width: 13px;
+    height: 16px;
+    mask-image: var(--contacs-link);
+    mask-repeat: no-repeat;
+    mask-size: 13px 16px;
+    mask-position: center;
+    background-color: $base-primary;
+    transition: background-color 0.3s ease;
+  }
+}
+
+.contacts__link--address {
+  --contacs-link: url("../../icons/stack.svg#address-icon");
+}
+
+.contacts__link--phone {
+  --contacs-link: url("../../icons/stack.svg#phone-icon");
+}

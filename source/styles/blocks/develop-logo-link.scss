@@ -1,0 +1,18 @@
+@use "../common/variables.scss";
+
+.develop-logo-link {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 12px;
+    height: 16px;
+    mask-image: url("../../icons/stack.svg#developer-logo");
+    mask-repeat: no-repeat;
+    mask-size: 12px 16px;
+    mask-position: center;
+    background-color: $base-grey;
+    transition: background-color 0.3s ease;
+  }
+}

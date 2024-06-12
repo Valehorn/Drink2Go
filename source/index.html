@@ -21,28 +21,27 @@
   <header class="header container">
     <a class="header__logo header-logo" href="index.html">
       <picture>
-        <source type="image/svg+xml" media="(min-width: 1220px)" srcset="images/logo-desktop.svg" width="70"
-          height="59">
-        <source type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-tablet.svg" width="60" height="50">
-        <img class="header-logo__image" src="images/logo-phone.svg" width="33" height="38" alt="Логотип Cat Energy.">
+        <source type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-drink2go-desktop.svg" width="170"
+          height="36">
+        <source type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-drink2go-tablet.svg" width="82"
+          height="36">
+        <img class="header-logo__image" src="images/logo-drink2go-mobile.svg" width="32" height="36"
+          alt="Логотип Drink2Go.">
       </picture>
-      <div class="header__logo-text-wrapper">
-        <svg class="header__logo-text logo-text" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"
-          width="101" height="18" fill="none" viewBox="0 0 101 18">
-          <path fill="#111"
-            d="M1.26 16.54A6.86 6.86 0 0 1 0 12.24v-6.4C-.1 4.3.3 2.77 1.19 1.47 2.05.46 3.39 0 5.37 0 7.35 0 8.61.46 9.4 1.3a5.42 5.42 0 0 1 1.19 3.78v1.54H6.72V4.85a3.7 3.7 0 0 0-.24-1.54 1.16 1.16 0 0 0-1.1-.62c-.56 0-.95.16-1.11.54a4.85 4.85 0 0 0-.24 1.7v8.22c-.04.56.07 1.12.32 1.62.15.38.55.54 1.1.54.56 0 .87-.16 1.03-.54.18-.52.26-1.07.24-1.62v-1.84h3.87v1.54a5.77 5.77 0 0 1-1.19 3.84c-.79.93-2.13 1.39-4.03 1.39-1.9-.08-3.32-.54-4.1-1.54ZM15.25.23h4.5l3.33 17.54h-3.64l-.63-3.7h-2.6l-.64 3.7h-3.72L15.25.23Zm3.24 11.54-.95-6.85-.94 6.85h1.9ZM25.84 3.15h-2.68V.23h9.4v2.85h-2.69v14.69h-4.03V3.15ZM39.75.23h6.96v1.85h-4.5v5.77h3.63v1.77H42.2v6.46h4.5v1.77h-7.03V.23h.08ZM48.76.23h1.74l5.14 11.62V.23h2.05v17.54h-1.58l-5.21-12v12h-2.14V.23ZM60.06.23h6.96v1.85h-4.5v5.77h3.63v1.77H62.5v6.46h4.5v1.77h-6.95V.23ZM69.07.23h3.64c1.43-.1 2.85.28 4.03 1.08C77.6 2 78 3.23 78 4.85c0 2.23-.7 3.61-2.21 4.07l2.53 8.77h-2.45L73.5 9.46h-1.98v8.23H69V.23h.08Zm3.48 7.54c.81.06 1.63-.15 2.3-.62.47-.38.7-1.15.7-2.3a4.85 4.85 0 0 0-.23-1.7c-.18-.39-.49-.71-.87-.92a3.69 3.69 0 0 0-1.74-.3h-1.1v5.76h.94v.08ZM81.16 16.46a7.61 7.61 0 0 1-1.1-4.46V6.15c-.02-1.11.11-2.22.4-3.3.26-.81.78-1.51 1.5-2 .88-.51 1.9-.75 2.92-.7 1.66 0 2.84.39 3.55 1.23a5.77 5.77 0 0 1 1.11 3.85v.62h-2.37V5.3c0-.65-.05-1.29-.16-1.93-.06-.4-.3-.76-.63-1a2.5 2.5 0 0 0-1.5-.38 2.42 2.42 0 0 0-1.58.46 1.75 1.75 0 0 0-.63 1.23c-.1.69-.16 1.38-.16 2.08v6.54c-.06 1 .1 2 .47 2.92.32.62.95.85 1.9.85.37.04.75-.02 1.09-.19.34-.16.62-.42.8-.74.42-.97.61-2.02.56-3.07v-1.23h-2.3V9.08h4.59v8.69h-1.58l-.24-2c-.2.67-.64 1.25-1.22 1.66-.6.4-1.3.6-2.02.57a4.05 4.05 0 0 1-3.4-1.54ZM94.68 11.62 90.8.3h2.37l2.76 8.46L98.63.3H101l-3.87 11.3v6.16h-2.37v-6.15h-.08Z" />
-        </svg>
-      </div>
       <p class="header__logo-description">Интернет-магазин
         кофейных напитков</p>
     </a>
     <nav class="header__nav">
       <ul class="header__nav-user-list">
         <li class="header__nav-user-item">
-          <span class="nav-user-item-description">Войти</span>
+          <button class="header__nav-loggin-button header__nav-loggin-button--user" type="button">
+            <span class="nav-user-item-description">Войти</span>
+          </button>
         </li>
         <li class="header__nav-user-item">
-          <span class="nav-user-item-description">Корзина</span>
+          <button class="header__nav-loggin-button header__nav-loggin-button--basket" type="button">
+            <span class="nav-user-item-description">Корзина</span>
+          </button>
         </li>
       </ul>
       <div class="header__nav-main-menu-wrapper">
@@ -476,10 +475,12 @@
   <footer class="footer container">
     <a class="header__logo header-logo" href="index.html">
       <picture>
-        <source type="image/svg+xml" media="(min-width: 1220px)" srcset="images/logo-desktop.svg" width="70"
-          height="59">
-        <source type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-tablet.svg" width="60" height="50">
-        <img class="header-logo__image" src="images/logo-phone.svg" width="33" height="38" alt="Логотип Cat Energy.">
+        <source type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-drink2go-desktop.svg" width="170"
+          height="36">
+        <source type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-drink2go-desktop.svg" width="170"
+          height="36">
+        <img class="header-logo__image" src="images/logo-drink2go-tablet.svg" width="82" height="36"
+          alt="Логотип Drink2Go.">
       </picture>
     </a>
     <ul class="footer__list social-list">
@@ -535,21 +536,18 @@
         <h2 class="contacts__title">Контакты</h2>
         <ul class="contacts__list">
           <li class="contacts__item">
-            <address class="contacts__address">Санкт-Петербург, набережная реки Карповки, дом 5</address>
+            <a class="contacts__link contacts__link--address" href="#">
+              <address class="contacts__address">Санкт-Петербург, набережная реки Карповки, дом 5</address>
+            </a>
           </li>
           <li class="contacts__item">
-            <a class="contacts__phone" href="tel:79999999999">+7 (999) 999-99-99</a>
+            <a class="contacts__link contacts__link--phone" href="tel:79999999999">+7 (999) 999-99-99</a>
           </li>
         </ul>
       </div>
     </nav>
     <a class="develop-logo-link" href="https://htmlacademy.ru/">
-      <span class="develop-logo-link__text">Разработано в</span>
-      <svg class="develop-logo" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="115"
-        height="34" fill="none" viewBox="0 0 115 34">
-        <path fill="currentColor"
-          d="M0 13.72v2.6h2.5v-2.6H0ZM11.6 5.32c-1.6 0-2.8.7-3.6 1.7h-.1V.82h-2v15.5h2v-5.3c0-2.1 1.3-3.6 3.3-3.6 1.8 0 2.9 1.4 2.9 3.2v5.7h2v-6.1c.1-3-1.8-4.9-4.5-4.9ZM26.6 5.62h-4.8v-3.7h-2v3.8h-1.9v2h1.9v6c0 1.7 1 2.7 2.7 2.7h4.1v-2h-3.7c-.7 0-1.1-.4-1.1-1.1v-5.7h4.8v-2ZM41.1 5.42c-1.6 0-2.9.8-3.5 2.1h-.1c-.6-1.2-1.8-2.1-3.4-2.1-1.4 0-2.5.8-3.1 1.8h-.1v-1.6H29v10.6h2v-5.4c0-2 1-3.5 2.6-3.5 1.5 0 2.4 1 2.4 2.6v6.3h2v-5.6c0-2.4 1.4-3.3 2.6-3.3 1.5 0 2.4 1 2.4 2.6v6.3h2v-6.5c.1-2.5-1.4-4.3-3.9-4.3ZM47.8 13.52c0 1.7 1 2.7 2.8 2.7h2v-2h-1.7c-.7 0-1.1-.4-1.1-1.1V.82h-2v12.7ZM28.9 20.52c-.9-1.1-2.2-1.8-3.9-1.8-3.1 0-5.4 2.3-5.4 5.6s2.3 5.6 5.4 5.6c1.8 0 3-.8 3.8-1.9h.1v1.6h2v-10.6h-2v1.5Zm-3.6 7.4c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6 3.6 1.6 3.6 3.6c0 1.9-1.4 3.6-3.6 3.6ZM44.2 22.82c-.5-2.4-2.6-4.1-5.4-4.1a5.4 5.4 0 0 0-5.6 5.6c0 3.1 2.2 5.6 5.6 5.6 2.8 0 4.9-1.8 5.4-4.2h-2.1a3.4 3.4 0 0 1-3.3 2.3c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6c1.6 0 2.8 1 3.3 2.2h2.1v-.2ZM55.1 20.52c-.9-1.1-2.2-1.8-3.9-1.8-3.1 0-5.4 2.3-5.4 5.6s2.3 5.6 5.4 5.6c1.8 0 3-.8 3.8-1.9h.1v1.6h2v-10.6h-2v1.5Zm-3.6 7.4c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6 3.6 1.6 3.6 3.6c0 1.9-1.5 3.6-3.6 3.6ZM68.7 20.62c-.9-1.1-2.2-1.9-3.9-1.9-3.1 0-5.4 2.3-5.4 5.6s2.2 5.6 5.4 5.6c1.7 0 3-.8 3.8-1.8h.1v1.5h2v-15.4h-2v6.4Zm-3.6 7.3c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6 3.6 1.6 3.6 3.6c-.1 2-1.5 3.6-3.6 3.6ZM78.3 18.72c-3.3 0-5.5 2.5-5.5 5.6 0 3 2.1 5.6 5.5 5.6 2.5 0 4.5-1.3 5.2-3.6h-2.1c-.5 1-1.6 1.6-3 1.6-1.9 0-3.3-1.3-3.4-2.9h8.8c.2-3.6-2-6.3-5.5-6.3Zm0 1.9c1.7 0 3 1 3.3 2.6h-6.5c.3-1.5 1.5-2.6 3.2-2.6ZM98.2 18.72c-1.6 0-2.9.8-3.6 2h-.1c-.6-1.2-1.8-2-3.4-2-1.4 0-2.5.7-3.1 1.8v-1.5h-1.9v10.6h2v-5.4c0-2 1-3.4 2.6-3.5 1.5 0 2.4 1 2.4 2.6v6.3h2v-5.6c0-2.4 1.4-3.3 2.6-3.3 1.5 0 2.4 1 2.4 2.6v6.3h2v-6.5c.1-2.6-1.4-4.4-3.9-4.4ZM109.4 27.82l-3.6-8.9h-2.2l4.8 11.6c-.3.9-.7 1.2-1.7 1.2h-2.5v2h2.5c1.8 0 2.8-.8 3.5-2.6l4.7-12.2h-2.1l-3.4 8.9Z" />
-      </svg>
+      <span class="develop-logo-link__text">Разработано в HTML Academy</span>
     </a>
   </footer>
 </body>

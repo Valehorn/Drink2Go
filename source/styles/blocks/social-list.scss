@@ -1,0 +1,32 @@
+@use "../common/variables.scss";
+
+.social-list__link {
+  --social-image: 0;
+  width: 40px;
+  height: 40px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 20px;
+    mask-image: var(--social-image);
+    mask-repeat: no-repeat;
+    mask-size: 20px 20px;
+    mask-position: center;
+    background-color: $base-grey;
+    transition: background-color 0.3s ease;
+  }
+}
+
+.social-list__link--vk {
+  --social-image: url("../../icons/stack.svg#social-vk-icon");
+}
+
+.social-list__link--pinterest {
+  --social-image: url("../../icons/stack.svg#social-pinterest-icon");
+}
+
+.social-list__link--classmates {
+  --social-image: url("../../icons/stack.svg#social-classmates-icon");
+}

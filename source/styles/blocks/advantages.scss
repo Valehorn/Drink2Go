@@ -1,0 +1,33 @@
+@use "../common/variables.scss";
+
+.advantages__item {
+  position: relative;
+  --advantages-icon: 0;
+
+  &::before {
+    position: absolute;
+    content: "";
+    background-image: var(--advantages-icon);
+    background-repeat: no-repeat;
+    background-size: 52px 56px;
+    background-position: center;
+    width: 52px;
+    height: 56px;
+  }
+}
+
+.advantages__item--speed {
+  --advantages-icon: url("../../icons/stack.svg#clock-icon");
+}
+
+.advantages__item--convenience {
+  --advantages-icon: url("../../icons/stack.svg#shield-icon");
+}
+
+.advantages__item--energy {
+  --advantages-icon: url("../../icons/stack.svg#lightning-icon");
+}
+
+.advantages__item--eco {
+  --advantages-icon: url("../../icons/stack.svg#leaf-icon");
+}

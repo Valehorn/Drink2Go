@@ -7,15 +7,18 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="preload" href="#" type="font/woff2" as="font">
   <link rel="stylesheet" href="styles/styles.css" media="all">
-  <link rel="preload" href="fonts/montserrat/montserrat-regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/montserrat/montserrat-regular.woff2" type="font/woff2" as="font"
+    crossorigin="anonymous">
   <link rel="preload" href="fonts/montserrat/montserrat-bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
-  <link rel="preload" href="fonts/montserrat/montserrat-semibold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
-  <link rel="preload" href="fonts/montserrat/montserrat-medium.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/montserrat/montserrat-semibold.woff2" type="font/woff2" as="font"
+    crossorigin="anonymous">
+  <link rel="preload" href="fonts/montserrat/montserrat-medium.woff2" type="font/woff2" as="font"
+    crossorigin="anonymous">
   <script src="scripts/index.js" defer></script>
 </head>
 
 <body class="page__body">
-  <header class="header">
+  <header class="header container">
     <a class="header__logo header-logo" href="index.html">
       <picture>
         <source type="image/svg+xml" media="(min-width: 1220px)" srcset="images/logo-desktop.svg" width="70"
@@ -66,51 +69,53 @@
   <main>
     <h1 class="visually-hidden">Главная магазина кофе Drink2Go</h1>
     <section class="hero">
-      <h2 class="visually-hidden">Меню слайдера</h2>
-      <div class="slider-pagination">
-        <button class="slider-button-prev" type="button">
-          <span class="visually-hidden">Кнопка слайдера выбора товара назад</span>
-        </button>
-        <button class="slider-button-next" type="button">
-          <span class="visually-hidden">Кнопка слайдера выбора товара вперед</span>
-        </button>
-        <div class="hero__product-preview">
-          <div class="hero__picture">
-            <picture>
-              <source type="image/webp" media="(min-width: 1220px)"
-                srcset="images/supplies-hero-desktop@1x.webp 1x, images/supplies-hero-desktop@2x.webp 2x" width="552"
-                height="499">
-              <source type="image/webp" media="(min-width: 768px)"
-                srcset="images/supplies-hero-tablet@1x.webp 1x, images/supplies-hero-tablet@2x.webp 2x" width="709"
-                height="609">
-              <source type="image/png" media="(min-width: 1220px)"
-                srcset="images/supplies-hero-desktop@1x.png 1x, images/supplies-hero-desktop@2x.png 2x" width="552"
-                height="499">
-              <source type="image/jpeg" media="(min-width: 768px)"
-                srcset="images/supplies-hero-tablet@1x.jpg 1x, images/supplies-hero-tablet@2x.jpg 2x" width="709"
-                height="609">
-              <source type="image/webp" media="(max-width: 767px)"
-                srcset="images/supplies-hero-phone@1x.webp 1x, images/supplies-hero-phone@2x.webp 2x" width="280"
-                height="270">
-              <img class="hero__image" src="images/supplies-hero-phone@1x.png"
-                srcset="images/supplies-hero-phone@2x.png 2x" width="280" height="270"
-                alt="Cat Energy со вкусом курицы.">
-            </picture>
+      <div class="container">
+        <h2 class="visually-hidden">Меню слайдера</h2>
+        <div class="slider-pagination">
+          <button class="slider-button-prev" type="button">
+            <span class="visually-hidden">Кнопка слайдера выбора товара назад</span>
+          </button>
+          <button class="slider-button-next" type="button">
+            <span class="visually-hidden">Кнопка слайдера выбора товара вперед</span>
+          </button>
+          <div class="hero__product-preview">
+            <div class="hero__picture">
+              <picture>
+                <source type="image/webp" media="(min-width: 1220px)"
+                  srcset="images/supplies-hero-desktop@1x.webp 1x, images/supplies-hero-desktop@2x.webp 2x" width="552"
+                  height="499">
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="images/supplies-hero-tablet@1x.webp 1x, images/supplies-hero-tablet@2x.webp 2x" width="709"
+                  height="609">
+                <source type="image/png" media="(min-width: 1220px)"
+                  srcset="images/supplies-hero-desktop@1x.png 1x, images/supplies-hero-desktop@2x.png 2x" width="552"
+                  height="499">
+                <source type="image/jpeg" media="(min-width: 768px)"
+                  srcset="images/supplies-hero-tablet@1x.jpg 1x, images/supplies-hero-tablet@2x.jpg 2x" width="709"
+                  height="609">
+                <source type="image/webp" media="(max-width: 767px)"
+                  srcset="images/supplies-hero-phone@1x.webp 1x, images/supplies-hero-phone@2x.webp 2x" width="280"
+                  height="270">
+                <img class="hero__image" src="images/supplies-hero-phone@1x.png"
+                  srcset="images/supplies-hero-phone@2x.png 2x" width="280" height="270"
+                  alt="Cat Energy со вкусом курицы.">
+              </picture>
+            </div>
+            <p class="hero__marker marker">Новинка!</p>
+            <h2 class="hero__product-title">Декаф Флэт Уайт</h2>
+            <p class="hero__product-description">Свежесваренный кофе без кофеина из Эфиопии с натуральным фермерским
+              молоком — то, что нужно для расслабления после тяжёлого рабочего дня</p>
+            <div class="hero__product-price">
+              <del class="hero__product-old-price">295<span>&#8381;</span></del>
+              <p class="hero__product-new-price">235<span>&#8381;</span></p>
+              <a class="button button--order" href="#">Заказать</a>
+            </div>
+            <div class="hero__product-desktop-pagination"></div>
           </div>
-          <p class="hero__marker marker">Новинка!</p>
-          <h2 class="hero__product-title">Декаф Флэт Уайт</h2>
-          <p class="hero__product-description">Свежесваренный кофе без кофеина из Эфиопии с натуральным фермерским
-            молоком — то, что нужно для расслабления после тяжёлого рабочего дня</p>
-          <div class="hero__product-price">
-            <del class="hero__product-old-price">295<span>&#8381;</span></del>
-            <p class="hero__product-new-price">235<span>&#8381;</span></p>
-            <a class="button button--order" href="#">Заказать</a>
-          </div>
-          <div class="hero__product-desktop-pagination"></div>
         </div>
       </div>
     </section>
-    <section class="advantages">
+    <section class="advantages container">
       <h2 class="advantages__title marker">Преимущества</h2>
       <h3 class="advantages__sub-title">Главные причины выбрать Drink2Go</h3>
       <ul class="advantages__list">
@@ -133,322 +138,330 @@
       </ul>
     </section>
     <section class="order">
-      <h2 class="order__title marker">Каталог</h2>
-      <h3 class="order__sub-title">Главные причины выбрать Drink2Go</h3>
-      <form class="order__form" action="https://echo.htmlacademy.ru" method="post">
-        <fieldset class="order__form-fieldset order__form-fieldset--price">
-          <legend class="order__form-title">Цена</legend>
-          <label class="visually-hidden" for="price">Выбор цены</label>
-          <input class="order__form-value" id="price" type="number" step="any" name="catalog-price-value" value="0">
-          <div class="order__form-slider"></div>
-          <div class="order__form-input-group">
-            <label class="visually-hidden" for="price-from">Цена от</label>
-            <input class="order__form-input-number" type="number" id="price-from" name="price-from">
-            <label class="visually-hidden" for="price-to">Цена до</label>
-            <input class="order__input-number" type="number" id="price-to" name="price-to">
+      <div class="container">
+        <h2 class="order__title marker">Каталог</h2>
+        <h3 class="order__sub-title">Главные причины выбрать Drink2Go</h3>
+        <form class="order__form" action="https://echo.htmlacademy.ru" method="post">
+          <fieldset class="order__form-fieldset order__form-fieldset--price">
+            <legend class="order__form-title">Цена</legend>
+            <label class="visually-hidden" for="price">Выбор цены</label>
+            <input class="order__form-value" id="price" type="number" step="any" name="catalog-price-value" value="0">
+            <div class="order__form-slider"></div>
+            <div class="order__form-input-group">
+              <label class="visually-hidden" for="price-from">Цена от</label>
+              <input class="order__form-input-number" type="number" id="price-from" name="price-from">
+              <label class="visually-hidden" for="price-to">Цена до</label>
+              <input class="order__input-number" type="number" id="price-to" name="price-to">
+            </div>
+          </fieldset>
+          <fieldset class="order__form-fieldset order__form-fieldset--milk-presence">
+            <legend class="order__form-title">Наличие молока</legend>
+            <ul class="order__milk-presence-list">
+              <li class="order__milk-presence-list">
+                <label class="order__form-title" for="any-milk">Неважно</label>
+                <input class="order__input-radio" type="radio" id="any-milk" name="milk" value="any-milk">
+              </li>
+              <li class="order__milk-presence-list">
+                <label class="order__form-title" for="animal">Только животное</label>
+                <input class="order__input-radio" type="radio" id="animal" name="milk" value="animal">
+              </li>
+              <li class="order__milk-presence-list">
+                <label class="order__form-title" for="vegetable">Только растительное</label>
+                <input class="order__input-radio" type="radio" id="vegetable" name="milk" value="vegetable">
+              </li>
+              <li class="order__milk-presence-list">
+                <label class="order__form-title" for="without-milk">Без молока</label>
+                <input class="order__input-radio" type="radio" id="without-milk" name="milk" value="without-milk"
+                  disabled>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="order__form-fieldset order__form-fieldset--country">
+            <legend class="order__form-title">Страна произрастания</legend>
+            <ul class="order__country-list">
+              <li class="order__country-item">
+                <label class="order__form-title" for="brazil">Бразилия</label>
+                <input class="order__input-switch" type="checkbox" id="brazil" name="Brazil">
+              </li>
+              <li class="order__country-item">
+                <label class="order__form-title" for="ethiopia">Эфиопия</label>
+                <input class="order__input-switch" type="checkbox" id="ethiopia" name="Ethiopia">
+              </li>
+              <li class="order__country-item">
+                <label class="order__form-title" for="colombia">Колумбия</label>
+                <input class="order__input-switch" type="checkbox" id="colombia" name="Colombia">
+              </li>
+              <li class="order__country-item">
+                <label class="order__form-title" for="costa-rica">Коста-Рика</label>
+                <input class="order__input-switch" type="checkbox" id="costa-rica" name="Costa-Rica">
+              </li>
+              <li class="order__country-item">
+                <label class="order__form-title" for="peru">Бразилия</label>
+                <input class="order__input-switch" type="checkbox" id="peru" name="Peru" disabled>
+              </li>
+            </ul>
+          </fieldset>
+          <div class="order__form-button-group">
+            <button class="button" type="submit">Применить</button>
+            <button class="button button-secondary" type="reset">Сбросить</button>
           </div>
-        </fieldset>
-        <fieldset class="order__form-fieldset order__form-fieldset--milk-presence">
-          <legend class="order__form-title">Наличие молока</legend>
-          <ul class="order__milk-presence-list">
-            <li class="order__milk-presence-list">
-              <label class="order__form-title" for="any-milk">Неважно</label>
-              <input class="order__input-radio" type="radio" id="any-milk" name="milk" value="any-milk">
-            </li>
-            <li class="order__milk-presence-list">
-              <label class="order__form-title" for="animal">Только животное</label>
-              <input class="order__input-radio" type="radio" id="animal" name="milk" value="animal">
-            </li>
-            <li class="order__milk-presence-list">
-              <label class="order__form-title" for="vegetable">Только растительное</label>
-              <input class="order__input-radio" type="radio" id="vegetable" name="milk" value="vegetable">
-            </li>
-            <li class="order__milk-presence-list">
-              <label class="order__form-title" for="without-milk">Без молока</label>
-              <input class="order__input-radio" type="radio" id="without-milk" name="milk" value="without-milk"
-                disabled>
-            </li>
-          </ul>
-        </fieldset>
-        <fieldset class="order__form-fieldset order__form-fieldset--country">
-          <legend class="order__form-title">Страна произрастания</legend>
-          <ul class="order__country-list">
-            <li class="order__country-item">
-              <label class="order__form-title" for="brazil">Бразилия</label>
-              <input class="order__input-switch" type="checkbox" id="brazil" name="Brazil">
-            </li>
-            <li class="order__country-item">
-              <label class="order__form-title" for="ethiopia">Эфиопия</label>
-              <input class="order__input-switch" type="checkbox" id="ethiopia" name="Ethiopia">
-            </li>
-            <li class="order__country-item">
-              <label class="order__form-title" for="colombia">Колумбия</label>
-              <input class="order__input-switch" type="checkbox" id="colombia" name="Colombia">
-            </li>
-            <li class="order__country-item">
-              <label class="order__form-title" for="costa-rica">Коста-Рика</label>
-              <input class="order__input-switch" type="checkbox" id="costa-rica" name="Costa-Rica">
-            </li>
-            <li class="order__country-item">
-              <label class="order__form-title" for="peru">Бразилия</label>
-              <input class="order__input-switch" type="checkbox" id="peru" name="Peru" disabled>
-            </li>
-          </ul>
-        </fieldset>
-        <div class="order__form-button-group">
-          <button class="button" type="submit">Применить</button>
-          <button class="button button-secondary" type="reset">Сбросить</button>
-        </div>
-      </form>
+        </form>
+      </div>
     </section>
     <section class="catalog">
-      <h2 class="visually-hidden">Каталог товаров</h2>
-      <div class="catalog__sort">
-        <label class="catalog__sort-title" for="sort-select">Сортировка:</label>
-        <select class="catalog__sort-select" name="sort-select" id="sort-select">
-          <option value="default" selected>По умолчанию</option>
-          <option value="price bigger">По возрастанию цены</option>
-          <option value="price lower">По убыванию цены</option>
-          <option value="popular">По популярности</option>
-        </select>
+      <div class="container">
+        <h2 class="visually-hidden">Каталог товаров</h2>
+        <div class="catalog__sort">
+          <label class="catalog__sort-title" for="sort-select">Сортировка:</label>
+          <select class="catalog__sort-select" name="sort-select" id="sort-select">
+            <option value="default" selected>По умолчанию</option>
+            <option value="price bigger">По возрастанию цены</option>
+            <option value="price lower">По убыванию цены</option>
+            <option value="popular">По популярности</option>
+          </select>
+        </div>
+        <ul class="catalog__list">
+          <li class="catalog__item">
+            <article class="catalog__card">
+              <h2 class="visually-hidden">Карточка товара</h2>
+              <a class="catalog__card-picture" href="404.html">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1220px)"
+                    srcset="images/catalog/catalog-1-desktop@1x.webp 1x, images/catalog/catalog-1-desktop@2x.webp 2x"
+                    width="161" height="172">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="images/catalog/catalog-1-tablet@1x.webp 1x, images/catalog/catalog-1-tablet@2x.webp 2x"
+                    width="161" height="172">
+                  <source type="image/png" media="(min-width: 1220px)"
+                    srcset="images/catalog/catalog-1-desktop@1x.png 1x, images/catalog/catalog-1-desktop@2x.png 2x"
+                    width="161" height="172">
+                  <source type="image/png" media="(min-width: 768px)"
+                    srcset="images/catalog/catalog-1-tablet@1x.png 1x, images/catalog/catalog-1-tablet@2x.png 2x"
+                    width="161" height="172">
+                  <source type="image/webp" media="(max-width: 767px)"
+                    srcset="images/catalog/catalog-1-phone@1x.webp 1x, images/catalog/catalog-1-phone@2x.webp 2x"
+                    width="68" height="86">
+                  <img class="catalog__card-image" src="images/catalog/catalog-1-phone@1x.jpg"
+                    srcset="images/catalog/catalog-1-phone@2x.jpg 2x" width="68" height="86" alt="Cat Energy
+          PRO 500 г курица." loading="lazy">
+                </picture>
+              </a>
+              <a class="catalog__card-link" href="404.html">
+                <p class="catalog__card-title">Декаф Флэт Уайт</p>
+              </a>
+              <p class="catalog__card-description">Кофе без кофеина из Эфиопии
+                с натуральным фермерским молоком</p>
+              <p class="catalog__card-price">225<span>&#8381;</span></p>
+              <button class="button button--basket" type="button"><span>В корзину</span></button>
+            </article>
+          </li>
+          <li class="catalog__item">
+            <article class="catalog__card">
+              <h2 class="visually-hidden">Карточка товара</h2>
+              <a class="catalog__card-picture" href="404.html">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1220px)"
+                    srcset="images/catalog/catalog-1-desktop@1x.webp 1x, images/catalog/catalog-1-desktop@2x.webp 2x"
+                    width="161" height="172">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="images/catalog/catalog-1-tablet@1x.webp 1x, images/catalog/catalog-1-tablet@2x.webp 2x"
+                    width="161" height="172">
+                  <source type="image/png" media="(min-width: 1220px)"
+                    srcset="images/catalog/catalog-1-desktop@1x.png 1x, images/catalog/catalog-1-desktop@2x.png 2x"
+                    width="161" height="172">
+                  <source type="image/png" media="(min-width: 768px)"
+                    srcset="images/catalog/catalog-1-tablet@1x.png 1x, images/catalog/catalog-1-tablet@2x.png 2x"
+                    width="161" height="172">
+                  <source type="image/webp" media="(max-width: 767px)"
+                    srcset="images/catalog/catalog-1-phone@1x.webp 1x, images/catalog/catalog-1-phone@2x.webp 2x"
+                    width="68" height="86">
+                  <img class="catalog__card-image" src="images/catalog/catalog-1-phone@1x.jpg"
+                    srcset="images/catalog/catalog-1-phone@2x.jpg 2x" width="68" height="86" alt="Cat Energy
+          PRO 500 г курица." loading="lazy">
+                </picture>
+              </a>
+              <a class="catalog__card-link" href="404.html">
+                <p class="catalog__card-title">Декаф Флэт Уайт</p>
+              </a>
+              <p class="catalog__card-description">Кофе без кофеина из Эфиопии
+                с натуральным фермерским молоком</p>
+              <p class="catalog__card-price">225<span>&#8381;</span></p>
+              <button class="button button--basket" type="button"><span>В корзину</span></button>
+            </article>
+          </li>
+          <li class="catalog__item">
+            <article class="catalog__card">
+              <h2 class="visually-hidden">Карточка товара</h2>
+              <a class="catalog__card-picture" href="404.html">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1220px)"
+                    srcset="images/catalog/catalog-1-desktop@1x.webp 1x, images/catalog/catalog-1-desktop@2x.webp 2x"
+                    width="161" height="172">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="images/catalog/catalog-1-tablet@1x.webp 1x, images/catalog/catalog-1-tablet@2x.webp 2x"
+                    width="161" height="172">
+                  <source type="image/png" media="(min-width: 1220px)"
+                    srcset="images/catalog/catalog-1-desktop@1x.png 1x, images/catalog/catalog-1-desktop@2x.png 2x"
+                    width="161" height="172">
+                  <source type="image/png" media="(min-width: 768px)"
+                    srcset="images/catalog/catalog-1-tablet@1x.png 1x, images/catalog/catalog-1-tablet@2x.png 2x"
+                    width="161" height="172">
+                  <source type="image/webp" media="(max-width: 767px)"
+                    srcset="images/catalog/catalog-1-phone@1x.webp 1x, images/catalog/catalog-1-phone@2x.webp 2x"
+                    width="68" height="86">
+                  <img class="catalog__card-image" src="images/catalog/catalog-1-phone@1x.jpg"
+                    srcset="images/catalog/catalog-1-phone@2x.jpg 2x" width="68" height="86" alt="Cat Energy
+          PRO 500 г курица." loading="lazy">
+                </picture>
+              </a>
+              <a class="catalog__card-link" href="404.html">
+                <p class="catalog__card-title">Декаф Флэт Уайт</p>
+              </a>
+              <p class="catalog__card-description">Кофе без кофеина из Эфиопии
+                с натуральным фермерским молоком</p>
+              <p class="catalog__card-price">225<span>&#8381;</span></p>
+              <button class="button button--basket" type="button"><span>В корзину</span></button>
+            </article>
+          </li>
+          <li class="catalog__item">
+            <article class="catalog__card">
+              <h2 class="visually-hidden">Карточка товара</h2>
+              <a class="catalog__card-picture" href="404.html">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1220px)"
+                    srcset="images/catalog/catalog-1-desktop@1x.webp 1x, images/catalog/catalog-1-desktop@2x.webp 2x"
+                    width="161" height="172">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="images/catalog/catalog-1-tablet@1x.webp 1x, images/catalog/catalog-1-tablet@2x.webp 2x"
+                    width="161" height="172">
+                  <source type="image/png" media="(min-width: 1220px)"
+                    srcset="images/catalog/catalog-1-desktop@1x.png 1x, images/catalog/catalog-1-desktop@2x.png 2x"
+                    width="161" height="172">
+                  <source type="image/png" media="(min-width: 768px)"
+                    srcset="images/catalog/catalog-1-tablet@1x.png 1x, images/catalog/catalog-1-tablet@2x.png 2x"
+                    width="161" height="172">
+                  <source type="image/webp" media="(max-width: 767px)"
+                    srcset="images/catalog/catalog-1-phone@1x.webp 1x, images/catalog/catalog-1-phone@2x.webp 2x"
+                    width="68" height="86">
+                  <img class="catalog__card-image" src="images/catalog/catalog-1-phone@1x.jpg"
+                    srcset="images/catalog/catalog-1-phone@2x.jpg 2x" width="68" height="86" alt="Cat Energy
+          PRO 500 г курица." loading="lazy">
+                </picture>
+              </a>
+              <a class="catalog__card-link" href="404.html">
+                <p class="catalog__card-title">Декаф Флэт Уайт</p>
+              </a>
+              <p class="catalog__card-description">Кофе без кофеина из Эфиопии
+                с натуральным фермерским молоком</p>
+              <p class="catalog__card-price">225<span>&#8381;</span></p>
+              <button class="button button--basket" type="button"><span>В корзину</span></button>
+            </article>
+          </li>
+          <li class="catalog__item">
+            <article class="catalog__card">
+              <h2 class="visually-hidden">Карточка товара</h2>
+              <a class="catalog__card-picture" href="404.html">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1220px)"
+                    srcset="images/catalog/catalog-1-desktop@1x.webp 1x, images/catalog/catalog-1-desktop@2x.webp 2x"
+                    width="161" height="172">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="images/catalog/catalog-1-tablet@1x.webp 1x, images/catalog/catalog-1-tablet@2x.webp 2x"
+                    width="161" height="172">
+                  <source type="image/png" media="(min-width: 1220px)"
+                    srcset="images/catalog/catalog-1-desktop@1x.png 1x, images/catalog/catalog-1-desktop@2x.png 2x"
+                    width="161" height="172">
+                  <source type="image/png" media="(min-width: 768px)"
+                    srcset="images/catalog/catalog-1-tablet@1x.png 1x, images/catalog/catalog-1-tablet@2x.png 2x"
+                    width="161" height="172">
+                  <source type="image/webp" media="(max-width: 767px)"
+                    srcset="images/catalog/catalog-1-phone@1x.webp 1x, images/catalog/catalog-1-phone@2x.webp 2x"
+                    width="68" height="86">
+                  <img class="catalog__card-image" src="images/catalog/catalog-1-phone@1x.jpg"
+                    srcset="images/catalog/catalog-1-phone@2x.jpg 2x" width="68" height="86" alt="Cat Energy
+          PRO 500 г курица." loading="lazy">
+                </picture>
+              </a>
+              <a class="catalog__card-link" href="404.html">
+                <p class="catalog__card-title">Декаф Флэт Уайт</p>
+              </a>
+              <p class="catalog__card-description">Кофе без кофеина из Эфиопии
+                с натуральным фермерским молоком</p>
+              <p class="catalog__card-price">225<span>&#8381;</span></p>
+              <button class="button button--basket" type="button"><span>В корзину</span></button>
+            </article>
+          </li>
+          <li class="catalog__item">
+            <article class="catalog__card">
+              <h2 class="visually-hidden">Карточка товара</h2>
+              <a class="catalog__card-picture" href="404.html">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1220px)"
+                    srcset="images/catalog/catalog-1-desktop@1x.webp 1x, images/catalog/catalog-1-desktop@2x.webp 2x"
+                    width="161" height="172">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="images/catalog/catalog-1-tablet@1x.webp 1x, images/catalog/catalog-1-tablet@2x.webp 2x"
+                    width="161" height="172">
+                  <source type="image/png" media="(min-width: 1220px)"
+                    srcset="images/catalog/catalog-1-desktop@1x.png 1x, images/catalog/catalog-1-desktop@2x.png 2x"
+                    width="161" height="172">
+                  <source type="image/png" media="(min-width: 768px)"
+                    srcset="images/catalog/catalog-1-tablet@1x.png 1x, images/catalog/catalog-1-tablet@2x.png 2x"
+                    width="161" height="172">
+                  <source type="image/webp" media="(max-width: 767px)"
+                    srcset="images/catalog/catalog-1-phone@1x.webp 1x, images/catalog/catalog-1-phone@2x.webp 2x"
+                    width="68" height="86">
+                  <img class="catalog__card-image" src="images/catalog/catalog-1-phone@1x.jpg"
+                    srcset="images/catalog/catalog-1-phone@2x.jpg 2x" width="68" height="86" alt="Cat Energy
+          PRO 500 г курица." loading="lazy">
+                </picture>
+              </a>
+              <a class="catalog__card-link" href="404.html">
+                <p class="catalog__card-title">Декаф Флэт Уайт</p>
+              </a>
+              <p class="catalog__card-description">Кофе без кофеина из Эфиопии
+                с натуральным фермерским молоком</p>
+              <p class="catalog__card-price">225<span>&#8381;</span></p>
+              <button class="button button--basket" type="button">
+                <span>В корзину</span>
+              </button>
+            </article>
+          </li>
+        </ul>
       </div>
-      <ul class="catalog__list">
-        <li class="catalog__item">
-          <article class="catalog__card">
-            <h2 class="visually-hidden">Карточка товара</h2>
-            <a class="catalog__card-picture" href="404.html">
-              <picture>
-                <source type="image/webp" media="(min-width: 1220px)"
-                  srcset="images/catalog/catalog-1-desktop@1x.webp 1x, images/catalog/catalog-1-desktop@2x.webp 2x"
-                  width="161" height="172">
-                <source type="image/webp" media="(min-width: 768px)"
-                  srcset="images/catalog/catalog-1-tablet@1x.webp 1x, images/catalog/catalog-1-tablet@2x.webp 2x"
-                  width="161" height="172">
-                <source type="image/png" media="(min-width: 1220px)"
-                  srcset="images/catalog/catalog-1-desktop@1x.png 1x, images/catalog/catalog-1-desktop@2x.png 2x"
-                  width="161" height="172">
-                <source type="image/png" media="(min-width: 768px)"
-                  srcset="images/catalog/catalog-1-tablet@1x.png 1x, images/catalog/catalog-1-tablet@2x.png 2x"
-                  width="161" height="172">
-                <source type="image/webp" media="(max-width: 767px)"
-                  srcset="images/catalog/catalog-1-phone@1x.webp 1x, images/catalog/catalog-1-phone@2x.webp 2x"
-                  width="68" height="86">
-                <img class="catalog__card-image" src="images/catalog/catalog-1-phone@1x.jpg"
-                  srcset="images/catalog/catalog-1-phone@2x.jpg 2x" width="68" height="86" alt="Cat Energy
-          PRO 500 г курица." loading="lazy">
-              </picture>
-            </a>
-            <a class="catalog__card-link" href="404.html">
-              <p class="catalog__card-title">Декаф Флэт Уайт</p>
-            </a>
-            <p class="catalog__card-description">Кофе без кофеина из Эфиопии
-              с натуральным фермерским молоком</p>
-            <p class="catalog__card-price">225<span>&#8381;</span></p>
-            <button class="button button--basket" type="button"><span>В корзину</span></button>
-          </article>
-        </li>
-        <li class="catalog__item">
-          <article class="catalog__card">
-            <h2 class="visually-hidden">Карточка товара</h2>
-            <a class="catalog__card-picture" href="404.html">
-              <picture>
-                <source type="image/webp" media="(min-width: 1220px)"
-                  srcset="images/catalog/catalog-1-desktop@1x.webp 1x, images/catalog/catalog-1-desktop@2x.webp 2x"
-                  width="161" height="172">
-                <source type="image/webp" media="(min-width: 768px)"
-                  srcset="images/catalog/catalog-1-tablet@1x.webp 1x, images/catalog/catalog-1-tablet@2x.webp 2x"
-                  width="161" height="172">
-                <source type="image/png" media="(min-width: 1220px)"
-                  srcset="images/catalog/catalog-1-desktop@1x.png 1x, images/catalog/catalog-1-desktop@2x.png 2x"
-                  width="161" height="172">
-                <source type="image/png" media="(min-width: 768px)"
-                  srcset="images/catalog/catalog-1-tablet@1x.png 1x, images/catalog/catalog-1-tablet@2x.png 2x"
-                  width="161" height="172">
-                <source type="image/webp" media="(max-width: 767px)"
-                  srcset="images/catalog/catalog-1-phone@1x.webp 1x, images/catalog/catalog-1-phone@2x.webp 2x"
-                  width="68" height="86">
-                <img class="catalog__card-image" src="images/catalog/catalog-1-phone@1x.jpg"
-                  srcset="images/catalog/catalog-1-phone@2x.jpg 2x" width="68" height="86" alt="Cat Energy
-          PRO 500 г курица." loading="lazy">
-              </picture>
-            </a>
-            <a class="catalog__card-link" href="404.html">
-              <p class="catalog__card-title">Декаф Флэт Уайт</p>
-            </a>
-            <p class="catalog__card-description">Кофе без кофеина из Эфиопии
-              с натуральным фермерским молоком</p>
-            <p class="catalog__card-price">225<span>&#8381;</span></p>
-            <button class="button button--basket" type="button"><span>В корзину</span></button>
-          </article>
-        </li>
-        <li class="catalog__item">
-          <article class="catalog__card">
-            <h2 class="visually-hidden">Карточка товара</h2>
-            <a class="catalog__card-picture" href="404.html">
-              <picture>
-                <source type="image/webp" media="(min-width: 1220px)"
-                  srcset="images/catalog/catalog-1-desktop@1x.webp 1x, images/catalog/catalog-1-desktop@2x.webp 2x"
-                  width="161" height="172">
-                <source type="image/webp" media="(min-width: 768px)"
-                  srcset="images/catalog/catalog-1-tablet@1x.webp 1x, images/catalog/catalog-1-tablet@2x.webp 2x"
-                  width="161" height="172">
-                <source type="image/png" media="(min-width: 1220px)"
-                  srcset="images/catalog/catalog-1-desktop@1x.png 1x, images/catalog/catalog-1-desktop@2x.png 2x"
-                  width="161" height="172">
-                <source type="image/png" media="(min-width: 768px)"
-                  srcset="images/catalog/catalog-1-tablet@1x.png 1x, images/catalog/catalog-1-tablet@2x.png 2x"
-                  width="161" height="172">
-                <source type="image/webp" media="(max-width: 767px)"
-                  srcset="images/catalog/catalog-1-phone@1x.webp 1x, images/catalog/catalog-1-phone@2x.webp 2x"
-                  width="68" height="86">
-                <img class="catalog__card-image" src="images/catalog/catalog-1-phone@1x.jpg"
-                  srcset="images/catalog/catalog-1-phone@2x.jpg 2x" width="68" height="86" alt="Cat Energy
-          PRO 500 г курица." loading="lazy">
-              </picture>
-            </a>
-            <a class="catalog__card-link" href="404.html">
-              <p class="catalog__card-title">Декаф Флэт Уайт</p>
-            </a>
-            <p class="catalog__card-description">Кофе без кофеина из Эфиопии
-              с натуральным фермерским молоком</p>
-            <p class="catalog__card-price">225<span>&#8381;</span></p>
-            <button class="button button--basket" type="button"><span>В корзину</span></button>
-          </article>
-        </li>
-        <li class="catalog__item">
-          <article class="catalog__card">
-            <h2 class="visually-hidden">Карточка товара</h2>
-            <a class="catalog__card-picture" href="404.html">
-              <picture>
-                <source type="image/webp" media="(min-width: 1220px)"
-                  srcset="images/catalog/catalog-1-desktop@1x.webp 1x, images/catalog/catalog-1-desktop@2x.webp 2x"
-                  width="161" height="172">
-                <source type="image/webp" media="(min-width: 768px)"
-                  srcset="images/catalog/catalog-1-tablet@1x.webp 1x, images/catalog/catalog-1-tablet@2x.webp 2x"
-                  width="161" height="172">
-                <source type="image/png" media="(min-width: 1220px)"
-                  srcset="images/catalog/catalog-1-desktop@1x.png 1x, images/catalog/catalog-1-desktop@2x.png 2x"
-                  width="161" height="172">
-                <source type="image/png" media="(min-width: 768px)"
-                  srcset="images/catalog/catalog-1-tablet@1x.png 1x, images/catalog/catalog-1-tablet@2x.png 2x"
-                  width="161" height="172">
-                <source type="image/webp" media="(max-width: 767px)"
-                  srcset="images/catalog/catalog-1-phone@1x.webp 1x, images/catalog/catalog-1-phone@2x.webp 2x"
-                  width="68" height="86">
-                <img class="catalog__card-image" src="images/catalog/catalog-1-phone@1x.jpg"
-                  srcset="images/catalog/catalog-1-phone@2x.jpg 2x" width="68" height="86" alt="Cat Energy
-          PRO 500 г курица." loading="lazy">
-              </picture>
-            </a>
-            <a class="catalog__card-link" href="404.html">
-              <p class="catalog__card-title">Декаф Флэт Уайт</p>
-            </a>
-            <p class="catalog__card-description">Кофе без кофеина из Эфиопии
-              с натуральным фермерским молоком</p>
-            <p class="catalog__card-price">225<span>&#8381;</span></p>
-            <button class="button button--basket" type="button"><span>В корзину</span></button>
-          </article>
-        </li>
-        <li class="catalog__item">
-          <article class="catalog__card">
-            <h2 class="visually-hidden">Карточка товара</h2>
-            <a class="catalog__card-picture" href="404.html">
-              <picture>
-                <source type="image/webp" media="(min-width: 1220px)"
-                  srcset="images/catalog/catalog-1-desktop@1x.webp 1x, images/catalog/catalog-1-desktop@2x.webp 2x"
-                  width="161" height="172">
-                <source type="image/webp" media="(min-width: 768px)"
-                  srcset="images/catalog/catalog-1-tablet@1x.webp 1x, images/catalog/catalog-1-tablet@2x.webp 2x"
-                  width="161" height="172">
-                <source type="image/png" media="(min-width: 1220px)"
-                  srcset="images/catalog/catalog-1-desktop@1x.png 1x, images/catalog/catalog-1-desktop@2x.png 2x"
-                  width="161" height="172">
-                <source type="image/png" media="(min-width: 768px)"
-                  srcset="images/catalog/catalog-1-tablet@1x.png 1x, images/catalog/catalog-1-tablet@2x.png 2x"
-                  width="161" height="172">
-                <source type="image/webp" media="(max-width: 767px)"
-                  srcset="images/catalog/catalog-1-phone@1x.webp 1x, images/catalog/catalog-1-phone@2x.webp 2x"
-                  width="68" height="86">
-                <img class="catalog__card-image" src="images/catalog/catalog-1-phone@1x.jpg"
-                  srcset="images/catalog/catalog-1-phone@2x.jpg 2x" width="68" height="86" alt="Cat Energy
-          PRO 500 г курица." loading="lazy">
-              </picture>
-            </a>
-            <a class="catalog__card-link" href="404.html">
-              <p class="catalog__card-title">Декаф Флэт Уайт</p>
-            </a>
-            <p class="catalog__card-description">Кофе без кофеина из Эфиопии
-              с натуральным фермерским молоком</p>
-            <p class="catalog__card-price">225<span>&#8381;</span></p>
-            <button class="button button--basket" type="button"><span>В корзину</span></button>
-          </article>
-        </li>
-        <li class="catalog__item">
-          <article class="catalog__card">
-            <h2 class="visually-hidden">Карточка товара</h2>
-            <a class="catalog__card-picture" href="404.html">
-              <picture>
-                <source type="image/webp" media="(min-width: 1220px)"
-                  srcset="images/catalog/catalog-1-desktop@1x.webp 1x, images/catalog/catalog-1-desktop@2x.webp 2x"
-                  width="161" height="172">
-                <source type="image/webp" media="(min-width: 768px)"
-                  srcset="images/catalog/catalog-1-tablet@1x.webp 1x, images/catalog/catalog-1-tablet@2x.webp 2x"
-                  width="161" height="172">
-                <source type="image/png" media="(min-width: 1220px)"
-                  srcset="images/catalog/catalog-1-desktop@1x.png 1x, images/catalog/catalog-1-desktop@2x.png 2x"
-                  width="161" height="172">
-                <source type="image/png" media="(min-width: 768px)"
-                  srcset="images/catalog/catalog-1-tablet@1x.png 1x, images/catalog/catalog-1-tablet@2x.png 2x"
-                  width="161" height="172">
-                <source type="image/webp" media="(max-width: 767px)"
-                  srcset="images/catalog/catalog-1-phone@1x.webp 1x, images/catalog/catalog-1-phone@2x.webp 2x"
-                  width="68" height="86">
-                <img class="catalog__card-image" src="images/catalog/catalog-1-phone@1x.jpg"
-                  srcset="images/catalog/catalog-1-phone@2x.jpg 2x" width="68" height="86" alt="Cat Energy
-          PRO 500 г курица." loading="lazy">
-              </picture>
-            </a>
-            <a class="catalog__card-link" href="404.html">
-              <p class="catalog__card-title">Декаф Флэт Уайт</p>
-            </a>
-            <p class="catalog__card-description">Кофе без кофеина из Эфиопии
-              с натуральным фермерским молоком</p>
-            <p class="catalog__card-price">225<span>&#8381;</span></p>
-            <button class="button button--basket" type="button">
-              <span>В корзину</span>
-            </button>
-          </article>
-        </li>
-      </ul>
     </section>
     <section class="pagination">
-      <h2 class="visually-hidden">Пагинация</h2>
-      <ul class="pagination-list">
-        <li>
-          <a class="pagination-button" href="#">&lt;</a>
-        </li>
-        <li>
-          <a class="pagination-button" href="#">1</a>
-        </li>
-        <li>
-          <a class="pagination-button pagination-button--current" href="#">2</a>
-        </li>
-        <li>
-          <a class="pagination-button" href="#">3</a>
-        </li>
-        <li>
-          <a class="pagination-button" href="#">&gt;</a>
-        </li>
-      </ul>
+      <div class="container">
+        <h2 class="visually-hidden">Пагинация</h2>
+        <ul class="pagination-list">
+          <li>
+            <a class="pagination-button" href="#">&lt;</a>
+          </li>
+          <li>
+            <a class="pagination-button" href="#">1</a>
+          </li>
+          <li>
+            <a class="pagination-button pagination-button--current" href="#">2</a>
+          </li>
+          <li>
+            <a class="pagination-button" href="#">3</a>
+          </li>
+          <li>
+            <a class="pagination-button" href="#">&gt;</a>
+          </li>
+        </ul>
+      </div>
     </section>
     <section class="map">
-      <h2 class="visually-hidden">Карта</h2>
-      <div class="map__container">
-        <img class="map__image" src="#" alt="Карта" width="320" height="420">
+      <div class="container">
+        <h2 class="visually-hidden">Карта</h2>
+        <div class="map__container">
+          <img class="map__image" src="#" alt="Карта" width="320" height="420">
+        </div>
       </div>
     </section>
   </main>
-  <footer class="footer">
+  <footer class="footer container">
     <a class="header__logo header-logo" href="index.html">
       <picture>
         <source type="image/svg+xml" media="(min-width: 1220px)" srcset="images/logo-desktop.svg" width="70"
@@ -520,8 +533,8 @@
     </nav>
     <a class="develop-logo-link" href="https://htmlacademy.ru/">
       <span class="develop-logo-link__text">Разработано в</span>
-      <svg class="develop-logo" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
-        width="115" height="34" fill="none" viewBox="0 0 115 34">
+      <svg class="develop-logo" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="115"
+        height="34" fill="none" viewBox="0 0 115 34">
         <path fill="currentColor"
           d="M0 13.72v2.6h2.5v-2.6H0ZM11.6 5.32c-1.6 0-2.8.7-3.6 1.7h-.1V.82h-2v15.5h2v-5.3c0-2.1 1.3-3.6 3.3-3.6 1.8 0 2.9 1.4 2.9 3.2v5.7h2v-6.1c.1-3-1.8-4.9-4.5-4.9ZM26.6 5.62h-4.8v-3.7h-2v3.8h-1.9v2h1.9v6c0 1.7 1 2.7 2.7 2.7h4.1v-2h-3.7c-.7 0-1.1-.4-1.1-1.1v-5.7h4.8v-2ZM41.1 5.42c-1.6 0-2.9.8-3.5 2.1h-.1c-.6-1.2-1.8-2.1-3.4-2.1-1.4 0-2.5.8-3.1 1.8h-.1v-1.6H29v10.6h2v-5.4c0-2 1-3.5 2.6-3.5 1.5 0 2.4 1 2.4 2.6v6.3h2v-5.6c0-2.4 1.4-3.3 2.6-3.3 1.5 0 2.4 1 2.4 2.6v6.3h2v-6.5c.1-2.5-1.4-4.3-3.9-4.3ZM47.8 13.52c0 1.7 1 2.7 2.8 2.7h2v-2h-1.7c-.7 0-1.1-.4-1.1-1.1V.82h-2v12.7ZM28.9 20.52c-.9-1.1-2.2-1.8-3.9-1.8-3.1 0-5.4 2.3-5.4 5.6s2.3 5.6 5.4 5.6c1.8 0 3-.8 3.8-1.9h.1v1.6h2v-10.6h-2v1.5Zm-3.6 7.4c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6 3.6 1.6 3.6 3.6c0 1.9-1.4 3.6-3.6 3.6ZM44.2 22.82c-.5-2.4-2.6-4.1-5.4-4.1a5.4 5.4 0 0 0-5.6 5.6c0 3.1 2.2 5.6 5.6 5.6 2.8 0 4.9-1.8 5.4-4.2h-2.1a3.4 3.4 0 0 1-3.3 2.3c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6c1.6 0 2.8 1 3.3 2.2h2.1v-.2ZM55.1 20.52c-.9-1.1-2.2-1.8-3.9-1.8-3.1 0-5.4 2.3-5.4 5.6s2.3 5.6 5.4 5.6c1.8 0 3-.8 3.8-1.9h.1v1.6h2v-10.6h-2v1.5Zm-3.6 7.4c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6 3.6 1.6 3.6 3.6c0 1.9-1.5 3.6-3.6 3.6ZM68.7 20.62c-.9-1.1-2.2-1.9-3.9-1.9-3.1 0-5.4 2.3-5.4 5.6s2.2 5.6 5.4 5.6c1.7 0 3-.8 3.8-1.8h.1v1.5h2v-15.4h-2v6.4Zm-3.6 7.3c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6 3.6 1.6 3.6 3.6c-.1 2-1.5 3.6-3.6 3.6ZM78.3 18.72c-3.3 0-5.5 2.5-5.5 5.6 0 3 2.1 5.6 5.5 5.6 2.5 0 4.5-1.3 5.2-3.6h-2.1c-.5 1-1.6 1.6-3 1.6-1.9 0-3.3-1.3-3.4-2.9h8.8c.2-3.6-2-6.3-5.5-6.3Zm0 1.9c1.7 0 3 1 3.3 2.6h-6.5c.3-1.5 1.5-2.6 3.2-2.6ZM98.2 18.72c-1.6 0-2.9.8-3.6 2h-.1c-.6-1.2-1.8-2-3.4-2-1.4 0-2.5.7-3.1 1.8v-1.5h-1.9v10.6h2v-5.4c0-2 1-3.4 2.6-3.5 1.5 0 2.4 1 2.4 2.6v6.3h2v-5.6c0-2.4 1.4-3.3 2.6-3.3 1.5 0 2.4 1 2.4 2.6v6.3h2v-6.5c.1-2.6-1.4-4.4-3.9-4.4ZM109.4 27.82l-3.6-8.9h-2.2l4.8 11.6c-.3.9-.7 1.2-1.7 1.2h-2.5v2h2.5c1.8 0 2.8-.8 3.5-2.6l4.7-12.2h-2.1l-3.4 8.9Z" />
       </svg>

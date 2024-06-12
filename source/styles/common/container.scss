@@ -1,0 +1,19 @@
+@use "./variables.scss";
+
+.container {
+  margin: 0 auto;
+  min-width: $min-width-container;
+  max-width: $max-width-container;
+  padding-left: $horizontal-phone-padding;
+  padding-right: $horizontal-phone-padding;
+
+  @media (min-width: $tablet-width) {
+    padding-left: $horizontal-tablet-padding;
+    padding-right: $horizontal-tablet-padding;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: $horizontal-desktop-padding;
+    padding-right: $horizontal-desktop-padding;
+  }
+}

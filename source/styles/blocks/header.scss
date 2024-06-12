@@ -1,5 +1,17 @@
-.header {
-  background-color: #663399;
-  color: #ffffff;
-  padding: 10px 15px;
+@use "../common/variables.scss";
+
+.header__nav-list {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}
+
+.header__nav-link {
+  font-family: $monserrat-medium;
+  font-size: 12px;
+  line-height: 133%;
+  text-transform: uppercase;
+  color: $base-primary;
 }

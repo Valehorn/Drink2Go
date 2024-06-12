@@ -1,1 +1,69 @@
-/* здесь используйте глобальные селекторы img, body, html и так далее */
+@use "./variables.scss";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  /* Шрифты */
+  --monserrat-regular: "Montserrat Regular", "Arial", sans-serif;
+  --monserrat-bold: "Montserrat Bold", "Arial", sans-serif;
+  --monserrat-semiBold: "Montserrat SemiBold", "Arial", sans-serif;
+  --monserrat-medium: "Montserrat Medium", "Arial", sans-serif;
+
+  /* Основные цвета */
+  --base-white: #ffffff;
+  --base-grey: #bdbdbd;
+  --base-black: #333333;
+  --base-primary: #7859cf;
+  --base-secondary: #f0ebff;
+
+  /* Вторичные цвета */
+  --primary-opacity: rgba(120, 89, 207, 0.25);
+  --primary-lighter: #9070ec;
+  --primary-darker: #593cac;
+  --light-grey: #e2e2e2;
+
+  /* Фоновые цвета */
+  --lightes-grey: #f8f8f8;
+  --flat-white: #f3ebe1;
+  --lavendar-latte: #eae6fc;
+  --espresso: #e5e6e8;
+
+  /* display: flex;
+  flex-direction: column;
+  min-height: 100%; */
+  font-family: var(--monserrat-regular);
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--base-black);
+  margin: 0;
+}
+
+img {
+  display: block;
+  object-fit: contain;
+  min-width: 100%;
+  max-width: 100%;
+}
+
+a {
+  display: block;
+}
+
+
+input[type="number"] {
+  appearance: textfield;
+
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button {
+    margin: 0;
+    appearance: none;
+  }
+}

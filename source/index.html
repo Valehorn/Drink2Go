@@ -456,7 +456,19 @@
       <div class="container">
         <h2 class="visually-hidden">Карта</h2>
         <div class="map__container">
-          <img class="map__image" src="#" alt="Карта" width="320" height="420">
+          <picture>
+            <source type="image/webp" media="(min-width: 1220px)"
+              srcset="images/map/map-desktop@1x.webp 1x, images/map/map-desktop@2x.webp 2x" width="1440" height="400">
+            <source type="image/webp" media="(min-width: 768px)"
+              srcset="images/map/map-tablet@1x.webp 1x, images/map/map-tablet@2x.webp 2x" width="768" height="400">
+            <source type="image/png" media="(min-width: 1220px)"
+              srcset="images/map/map-desktop@1x.png 1x, images/map/map-desktop@2x.png 2x" width="1440" height="400">
+            <source type="image/png" media="(min-width: 768px)"
+              srcset="images/map/map-tablet@1x.png 1x, images/map/map-desktop@2x.png 2x" width="768" height="400">
+            <source type="image/webp" media="(max-width: 767px)"
+              srcset="images/map/map-phone@1x.webp 1x, images/map/map-phone@2x.webp 2x" width="320" height="362">
+            <img class="map__image" src="#" alt="Карта" width="320" height="420" loading="lazy">
+          </picture>
         </div>
       </div>
     </section>

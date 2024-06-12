@@ -8,7 +8,7 @@
   }
 }
 
-.header__nav-loggin-button {
+.header__nav-button {
   --nav-icon: 0;
   position: relative;
   border: 1px solid transparent;
@@ -29,12 +29,20 @@
   }
 }
 
-.header__nav-loggin-button--user {
+.header__nav-button--user {
   --nav-icon: url("../../icons/stack.svg#user-icon");
 }
 
-.header__nav-loggin-button--basket {
+.header__nav-button--basket {
   --nav-icon: url("../../icons/stack.svg#basket-icon");
+}
+
+.header__nav-user-item-description {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
 }
 
 .header__nav-button-burger {

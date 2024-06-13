@@ -3,3 +3,43 @@
 .order {
   background-color: $lightest-grey;
 }
+
+.order__filter-fieldset {
+  margin: 0;
+  padding: 0;
+  border: 1px solid transparent;
+}
+
+.order__filter-title,
+.order__filter-label {
+  font-size: 16px;
+  line-height: 150%;
+}
+
+.order__filter-title {
+  font-family: $monserrat-semiBold;
+}
+
+.order__milk-presence-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.order__country-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.order__button {
+  min-width: 280px;
+
+  @media (min-width: $tablet-width) {
+    min-width: 137px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 149px;
+  }
+}

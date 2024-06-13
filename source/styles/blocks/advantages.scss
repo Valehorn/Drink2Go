@@ -1,5 +1,11 @@
 @use "../common/variables.scss";
 
+.advantages__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
 .advantages__item {
   position: relative;
   --advantages-icon: 0;
@@ -7,12 +13,12 @@
   &::before {
     position: absolute;
     content: "";
+    width: 52px;
+    height: 56px;
     background-image: var(--advantages-icon);
     background-repeat: no-repeat;
     background-size: 52px 56px;
     background-position: center;
-    width: 52px;
-    height: 56px;
   }
 }
 
@@ -30,4 +36,25 @@
 
 .advantages__item--eco {
   --advantages-icon: url("../../icons/stack.svg#leaf-icon");
+}
+
+.advantages__item-title {
+  font-family: $monserrat-bold;
+  font-size: 18px;
+  line-height: 178%;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 24px;
+    line-height: 150%;
+  }
+}
+
+.advantages__item-description {
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 150%;
+  }
 }

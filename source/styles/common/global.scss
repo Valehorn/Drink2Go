@@ -16,8 +16,8 @@ body {
   min-height: 100%; */
   background-color: $base-white;
   font-family: $monserrat-regular;
-  font-size: 14px;
-  line-height: 143%;
+  font-size: $font-size-primary-mobile;
+  line-height: $line-height-primary-mobile;
   color: $base-black;
   margin: 0;
 }

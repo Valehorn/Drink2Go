@@ -1,0 +1,75 @@
+@use "../common/variables.scss";
+
+.pagination {
+  background-color: $lightest-grey;
+}
+
+.pagination-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.pagination-button {
+  --arrow-marker: 0;
+
+  font-size: 16px;
+  line-height: 150%;
+  min-width: 40px;
+  min-height: 40px;
+  padding: 8px;
+}
+
+li:first-child .pagination-button,
+li:last-child .pagination-button {
+  @media (max-width: $pre-tablet) {
+    position: relative;
+
+    &::after {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translateY(-50%) translateX(-50%);
+      content: "";
+      width: 6px;
+      height: 10px;
+      mask-image: var(--arrow-marker);
+      mask-repeat: no-repeat;
+      mask-size: 6px 10px;
+      mask-position: center;
+      background-color: $base-primary;
+    }
+  }
+}
+
+.pagination-button--previous {
+  --arrow-marker: url("../../icons/stack.svg#arrow-right");
+
+  @media (min-width: $tablet-width) {
+    min-width: 91px;
+    padding: 8px 20px;
+  }
+}
+
+.pagination-button--next {
+  --arrow-marker: url("../../icons/stack.svg#arrow-left");
+
+  @media (min-width: $tablet-width) {
+    min-width: 104px;
+    padding: 8px 20px;
+  }
+}
+
+.pagination-button--current {
+  font-family: $monserrat-semiBold;
+  color: $base-black;
+  background-color: transparent;
+}
+
+.pagination-button__description {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: inline;
+  }
+}

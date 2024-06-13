@@ -1,0 +1,8 @@
+@use "../common/variables.scss";
+
+.nav-item {
+  font-family: $monserrat-medium;
+  font-size: 12px;
+  line-height: 133%;
+  text-transform: uppercase;
+}

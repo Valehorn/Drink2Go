@@ -1,0 +1,38 @@
+@use "../common/variables.scss";
+
+.slider__product-title {
+  font-family: $monserrat-bold;
+  font-size: 36;
+  line-height: 133%;
+  letter-spacing: 0.02em;
+  color: $base-black;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 56px;
+    line-height: 143%;
+  }
+}
+
+.slider__product-description {
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 160%;
+  }
+}
+
+.slider__product-old-price {
+  font-size: 16px;
+  line-height: 200%;
+  color: $base-primary;
+  text-decoration: line-through;
+  margin: 0;
+}
+
+.slider__button {
+  font-size: 16px;
+  line-height: 150%;
+  min-width: 113px;
+}

@@ -5,6 +5,12 @@
 @import "./common/fonts.scss";
 @import "./common/visually-hidden.scss";
 @import "./common/container.scss";
+@import "./common/button.scss";
+@import "./common/logo.scss";
+@import "./common/title.scss";
+@import "./common/price.scss";
+@import "./common/badge.scss";
+
 
 /* BLOCKS */
 /* primary */
@@ -12,10 +18,18 @@
 
 /* BLOCKS */
 /* secondary */
+@import "./blocks/nav-item.scss";
 @import "./blocks/hero.scss";
+@import "./blocks/slider.scss";
 @import "./blocks/advantages.scss";
 @import "./blocks/order.scss";
 @import "./blocks/catalog.scss";
-@import "./blocks/contacts.scss";
+@import "./blocks/card.scss";
 @import "./blocks/social-list.scss";
+@import "./blocks/pagination.scss";
+@import "./blocks/map.scss";
+@import "./blocks/store.scss";
+@import "./blocks/media.scss";
+@import "./blocks/contacts.scss";
 @import "./blocks/develop-logo-link.scss";
+

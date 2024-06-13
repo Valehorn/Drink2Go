@@ -1,0 +1,11 @@
+@use "../common/variables.scss";
+
+.media__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.media__link {
+  color: $base-black;
+}

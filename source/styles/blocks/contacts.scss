@@ -1,9 +1,16 @@
 @use "../common/variables.scss";
 
+.contacts__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
 .contacts__link {
   --contacs-link: 0;
 
   position: relative;
+  color: $base-black;
 
   &::before {
     position: absolute;
@@ -26,4 +33,8 @@
 
 .contacts__link--phone {
   --contacs-link: url("../../icons/stack.svg#phone-icon");
+}
+
+.contacts__address {
+  font-style: normal;
 }

@@ -1,0 +1,10 @@
+@use "./variables.scss";
+
+.badge {
+  font-family: $monserrat-bold;
+  font-size: 12px;
+  line-height: 133%;
+  color: $base-primary;
+  text-transform: uppercase;
+  margin: 0;
+}

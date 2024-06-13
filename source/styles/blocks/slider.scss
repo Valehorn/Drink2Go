@@ -36,3 +36,32 @@
   line-height: 150%;
   min-width: 113px;
 }
+
+.slider__pagination-list {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    gap: 8px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.slider__pagination-button {
+  @media (min-width: $desktop-width) {
+    border: 1px solid transparent;
+    background-color: $base-white;
+    width: 62px;
+    height: 4px;
+    cursor: pointer;
+  }
+}
+
+.slider__pagination-item--current .slider__pagination-button {
+  @media (min-width: $desktop-width) {
+    background-color: $base-primary;
+  }
+}
+

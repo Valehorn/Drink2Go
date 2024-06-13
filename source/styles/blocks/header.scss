@@ -1,5 +1,30 @@
 @use "../common/variables.scss";
 
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 12px;
+  margin-bottom: 12px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 24px;
+    margin-bottom: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 22px;
+  }
+}
+
+.header__logo {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    gap: 20px;
+  }
+}
+
 .header__logo-description {
   display: none;
 
@@ -11,10 +36,36 @@
   }
 }
 
+.header__nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 22px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row-reverse;
+    gap: 80px;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 202px;
+  }
+}
+
 .header__nav-user-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 22px;
   list-style: none;
   padding: 0;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    gap: 38px;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 60px;
+  }
 }
 
 .header__nav-button {
@@ -22,10 +73,15 @@
   position: relative;
   border: 1px solid transparent;
   background-color: transparent;
+  width: 40px;
+  height: 40px;
   cursor: pointer;
 
   &::before {
     position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
     content: "";
     width: 16px;
     height: 16px;
@@ -70,10 +126,15 @@
   position: relative;
   border: 1px solid transparent;
   background-color: transparent;
+  width: 40px;
+  height: 40px;
   cursor: pointer;
 
   &::before {
     position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
     content: "";
     width: 16px;
     height: 16px;
@@ -97,7 +158,13 @@
   margin: 0;
 
   @media (min-width: $tablet-width) {
-    display: block;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 60px;
   }
 }
 

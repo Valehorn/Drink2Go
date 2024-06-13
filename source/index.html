@@ -155,19 +155,19 @@
           <fieldset class="order__filter-fieldset order__filter-fieldset--milk-presence">
             <legend class="order__filter-title">Наличие молока</legend>
             <ul class="order__milk-presence-list">
-              <li class="order__milk-presence-list">
+              <li class="order__milk-presence-item">
                 <input class="order__input-radio" type="radio" id="any-milk" name="milk" value="any-milk">
                 <label class="order__filter-label" for="any-milk">Неважно</label>
               </li>
-              <li class="order__milk-presence-list">
+              <li class="order__milk-presence-item">
                 <input class="order__input-radio" type="radio" id="animal" name="milk" value="animal">
                 <label class="order__filter-label" for="animal">Только животное</label>
               </li>
-              <li class="order__milk-presence-list">
+              <li class="order__milk-presence-item">
                 <input class="order__input-radio" type="radio" id="vegetable" name="milk" value="vegetable">
                 <label class="order__filter-label" for="vegetable">Только растительное</label>
               </li>
-              <li class="order__milk-presence-list">
+              <li class="order__milk-presence-item">
                 <input class="order__input-radio" type="radio" id="without-milk" name="milk" value="without-milk"
                 disabled>
                 <label class="order__filter-label" for="without-milk">Без молока</label>
@@ -431,24 +431,24 @@
     <section class="pagination">
       <div class="container">
         <h2 class="visually-hidden">Пагинация</h2>
-        <ul class="pagination-list">
+        <ul class="pagination__list pagination-list">
           <li>
-            <a class="pagination-button pagination-button--previous button button--secondary" href="#">
-              <span class="pagination-button__description">Назад</span>
+            <a class="pagination__button pagination__button--previous button button--secondary" href="#">
+              <span class="pagination__button-description">Назад</span>
             </a>
           </li>
           <li>
-            <a class="pagination-button button button--secondary" href="#">1</a>
+            <a class="pagination__button button button--secondary" href="#">1</a>
           </li>
           <li>
-            <a class="pagination-button pagination-button--current button button--secondary" href="#">2</a>
+            <a class="pagination__button pagination__button--current button button--secondary" href="#">2</a>
           </li>
           <li>
-            <a class="pagination-button button button--secondary" href="#">3</a>
+            <a class="pagination__button button button--secondary" href="#">3</a>
           </li>
           <li>
-            <a class="pagination-button pagination-button--next button button--secondary" href="#">
-              <span class="pagination-button__description">Вперед</span>
+            <a class="pagination__button pagination__button--next button button--secondary" href="#">
+              <span class="pagination__button-description">Вперед</span>
             </a>
           </li>
         </ul>

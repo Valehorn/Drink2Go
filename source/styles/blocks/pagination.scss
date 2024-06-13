@@ -4,13 +4,13 @@
   background-color: $lightest-grey;
 }
 
-.pagination-list {
+.pagination__list {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.pagination-button {
+.pagination__button {
   --arrow-marker: 0;
 
   font-size: 16px;
@@ -20,8 +20,8 @@
   padding: 8px;
 }
 
-li:first-child .pagination-button,
-li:last-child .pagination-button {
+li:first-child .pagination__button,
+li:last-child .pagination__button {
   @media (max-width: $pre-tablet) {
     position: relative;
 
@@ -42,7 +42,7 @@ li:last-child .pagination-button {
   }
 }
 
-.pagination-button--previous {
+.pagination__button--previous {
   --arrow-marker: url("../../icons/stack.svg#arrow-right");
 
   @media (min-width: $tablet-width) {
@@ -51,7 +51,7 @@ li:last-child .pagination-button {
   }
 }
 
-.pagination-button--next {
+.pagination__button--next {
   --arrow-marker: url("../../icons/stack.svg#arrow-left");
 
   @media (min-width: $tablet-width) {
@@ -60,13 +60,13 @@ li:last-child .pagination-button {
   }
 }
 
-.pagination-button--current {
+.pagination__button--current {
   font-family: $monserrat-semiBold;
   color: $base-black;
   background-color: transparent;
 }
 
-.pagination-button__description {
+.pagination__button-description {
   display: none;
 
   @media (min-width: $tablet-width) {

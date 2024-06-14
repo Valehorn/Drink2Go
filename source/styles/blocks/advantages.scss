@@ -1,8 +1,34 @@
 @use "../common/variables.scss";
 
 .advantages {
+  padding-top: 50px;
+  padding-bottom: 60px;
+  text-align: center;
+
   @media (min-width: $tablet-width) and (max-width: $pre-desktop) {
-    padding-top: 180px;
+    padding-top: 240px;
+    padding-bottom: 100px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 100px;
+    padding-bottom: 120px;
+  }
+}
+
+.advantages__badge {
+  margin-bottom: 4px;
+}
+
+.advantages__title {
+  margin-bottom: 36px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 80px;
   }
 }
 
@@ -10,14 +36,34 @@
   list-style: none;
   padding: 0;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 .advantages__item {
-  position: relative;
   --advantages-icon: 0;
+
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  min-height: 141px;
+  padding-top: 66px;
 
   &::before {
     position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
     content: "";
     width: 52px;
     height: 56px;
@@ -25,6 +71,33 @@
     background-repeat: no-repeat;
     background-size: 52px 56px;
     background-position: center;
+
+    @media (min-width: $tablet-width) and (max-width: $pre-desktop) {
+      position: static;
+      transform: translateX(0);
+      grid-row: 1 / -1;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-rows: 1fr;
+    padding-top: 76px;
+    gap: 10px;
+  }
+
+  @media (max-width: $pre-tablet) {
+    &:not(:last-child) {
+      margin-bottom: 32px;
+    }
+  }
+
+  @media (min-width: $tablet-width) and (max-width: $pre-desktop) {
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    grid-template-rows: min-content 1fr;
+    text-align: start;
+    gap: 10px 20px;
   }
 }
 
@@ -49,10 +122,12 @@
   font-size: 18px;
   line-height: 178%;
   margin: 0;
+  margin-bottom: 4px;
 
   @media (min-width: $tablet-width) {
     font-size: 24px;
     line-height: 150%;
+    margin-bottom: 0;
   }
 }
 
@@ -60,7 +135,13 @@
   margin: 0;
 
   @media (min-width: $tablet-width) {
+    grid-column: 2/-1;
+    text-align: start;
     font-size: 16px;
     line-height: 150%;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: center;
   }
 }

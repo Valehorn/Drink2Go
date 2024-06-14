@@ -39,32 +39,36 @@
 .header__nav {
   display: flex;
   flex-wrap: wrap;
-  gap: 22px;
+  gap: 0 22px;
+  max-width: 200px;
 
   @media (min-width: $tablet-width) {
     flex-direction: row-reverse;
-    gap: 80px;
+    gap: 0 80px;
+    max-width: none;
   }
 
   @media (min-width: $desktop-width) {
-    gap: 202px;
+    gap: 0 202px;
   }
 }
 
 .header__nav-user-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 22px;
+  gap: 0 22px;
   list-style: none;
   padding: 0;
   margin: 0;
 
   @media (min-width: $tablet-width) {
-    gap: 38px;
+    gap: 0 38px;
+    max-width: 120px;
   }
 
   @media (min-width: $desktop-width) {
-    gap: 60px;
+    gap: 0 60px;
+    max-width: 261px;
   }
 }
 
@@ -91,6 +95,11 @@
     mask-position: center;
     background-color: $base-black;
     transition: background-color 0.3s ease;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: auto;
+    height: auto;
   }
 }
 
@@ -160,11 +169,14 @@
   @media (min-width: $tablet-width) {
     display: flex;
     align-items: center;
-    gap: 40px;
+    flex-wrap: wrap;
+    gap: 0 40px;
+    max-width: 399px;
   }
 
   @media (min-width: $desktop-width) {
-    gap: 60px;
+    gap: 0 60px;
+    max-width: 459px;
   }
 }
 

@@ -152,67 +152,71 @@
       <div class="container">
         <p class="order__badge badge">Каталог</p>
         <h2 class="order__title title">Каталог кофейных напитков</h2>
+        div.
         <form class="order__filter" action="https://echo.htmlacademy.ru" method="post">
-          <fieldset class="order__filter-fieldset order__filter-fieldset--price">
-            <legend class="order__filter-title">Цена</legend>
-            <label class="visually-hidden" for="price">Выбор цены</label>
-            <input class="order__filter-value" id="price" type="number" step="any" name="catalog-price-value" value="0">
-            <div class="order__filter-slider"></div>
-            <div class="order__filter-input-group">
-              <label class="visually-hidden" for="price-from">Цена от</label>
-              <input class="order__filter-input-number" type="number" id="price-from" name="price-from">
-              <label class="visually-hidden" for="price-to">Цена до</label>
-              <span>-</span>
-              <input class="order__input-number" type="number" id="price-to" name="price-to">
-            </div>
-          </fieldset>
-          <fieldset class="order__filter-fieldset order__filter-fieldset--milk-presence">
-            <legend class="order__filter-title">Наличие молока</legend>
-            <ul class="order__milk-presence-list">
-              <li class="order__milk-presence-item">
-                <input class="order__input-radio" type="radio" id="any-milk" name="milk" value="any-milk">
-                <label class="order__filter-label" for="any-milk">Неважно</label>
-              </li>
-              <li class="order__milk-presence-item">
-                <input class="order__input-radio" type="radio" id="animal" name="milk" value="animal">
-                <label class="order__filter-label" for="animal">Только животное</label>
-              </li>
-              <li class="order__milk-presence-item">
-                <input class="order__input-radio" type="radio" id="vegetable" name="milk" value="vegetable">
-                <label class="order__filter-label" for="vegetable">Только растительное</label>
-              </li>
-              <li class="order__milk-presence-item">
-                <input class="order__input-radio" type="radio" id="without-milk" name="milk" value="without-milk"
-                  disabled>
-                <label class="order__filter-label" for="without-milk">Без молока</label>
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset class="order__filter-fieldset order__filter-fieldset--country">
-            <legend class="order__filter-title">Страна произрастания</legend>
-            <ul class="order__country-list">
-              <li class="order__country-item">
-                <input class="order__input-switch" type="checkbox" id="brazil" name="Brazil">
-                <label class="order__filter-label" for="brazil">Бразилия</label>
-              </li>
-              <li class="order__country-item">
-                <input class="order__input-switch" type="checkbox" id="ethiopia" name="Ethiopia">
-                <label class="order__filter-label" for="ethiopia">Эфиопия</label>
-              </li>
-              <li class="order__country-item">
-                <input class="order__input-switch" type="checkbox" id="colombia" name="Colombia">
-                <label class="order__filter-label" for="colombia">Колумбия</label>
-              </li>
-              <li class="order__country-item">
-                <input class="order__input-switch" type="checkbox" id="costa-rica" name="Costa-Rica">
-                <label class="order__filter-label" for="costa-rica">Коста-Рика</label>
-              </li>
-              <li class="order__country-item">
-                <input class="order__input-switch" type="checkbox" id="peru" name="Peru" disabled>
-                <label class="order__filter-label" for="peru">Перу</label>
-              </li>
-            </ul>
-          </fieldset>
+          <div class="order__tablet-group">
+            <fieldset class="order__filter-fieldset order__filter-fieldset--price">
+              <legend class="order__filter-title">Цена</legend>
+              <label class="visually-hidden" for="price">Выбор цены</label>
+              <input class="order__filter-value" id="price" type="number" step="any" name="catalog-price-value"
+                value="0">
+              <div class="order__filter-slider"></div>
+              <div class="order__filter-input-group">
+                <label class="visually-hidden" for="price-from">Цена от</label>
+                <input class="order__filter-input-number" type="number" id="price-from" name="price-from"
+                  placeholder="0">
+                <label class="visually-hidden" for="price-to">Цена до</label>
+                <input class="order__filter-input-number" type="number" id="price-to" name="price-to" value="900">
+              </div>
+            </fieldset>
+            <fieldset class="order__filter-fieldset order__filter-fieldset--milk">
+              <legend class="order__filter-title">Наличие молока</legend>
+              <ul class="order__milk-list">
+                <li class="order__milk-item">
+                  <input class="order__input-radio" type="radio" id="any-milk" name="milk" value="any-milk">
+                  <label class="order__filter-label" for="any-milk">Неважно</label>
+                </li>
+                <li class="order__milk-item">
+                  <input class="order__input-radio" type="radio" id="animal" name="milk" value="animal">
+                  <label class="order__filter-label" for="animal">Только животное</label>
+                </li>
+                <li class="order__milk-item">
+                  <input class="order__input-radio" type="radio" id="vegetable" name="milk" value="vegetable">
+                  <label class="order__filter-label" for="vegetable">Только растительное</label>
+                </li>
+                <li class="order__milk-item">
+                  <input class="order__input-radio" type="radio" id="without-milk" name="milk" value="without-milk"
+                    disabled>
+                  <label class="order__filter-label" for="without-milk">Без молока</label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="order__filter-fieldset order__filter-fieldset--country">
+              <legend class="order__filter-title">Страна произрастания</legend>
+              <ul class="order__country-list">
+                <li class="order__country-item">
+                  <input class="order__input-switch" type="checkbox" id="brazil" name="Brazil">
+                  <label class="order__filter-label" for="brazil">Бразилия</label>
+                </li>
+                <li class="order__country-item">
+                  <input class="order__input-switch" type="checkbox" id="ethiopia" name="Ethiopia">
+                  <label class="order__filter-label" for="ethiopia">Эфиопия</label>
+                </li>
+                <li class="order__country-item">
+                  <input class="order__input-switch" type="checkbox" id="colombia" name="Colombia">
+                  <label class="order__filter-label" for="colombia">Колумбия</label>
+                </li>
+                <li class="order__country-item">
+                  <input class="order__input-switch" type="checkbox" id="costa-rica" name="Costa-Rica">
+                  <label class="order__filter-label" for="costa-rica">Коста-Рика</label>
+                </li>
+                <li class="order__country-item">
+                  <input class="order__input-switch" type="checkbox" id="peru" name="Peru" disabled>
+                  <label class="order__filter-label" for="peru">Перу</label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
           <div class="order__filter-button-group">
             <button class="order__button button button--primary" type="submit">Применить</button>
             <button class="order__button button button--secondary" type="reset">Сбросить</button>
@@ -232,7 +236,7 @@
             <option value="popular">по популярности</option>
           </select>
         </div>
-        <ul class="catalog__list">
+        <ul class="catalog__card-list">
           <li class="catalog__item">
             <article class="card">
               <h2 class="visually-hidden">Карточка товара</h2>

@@ -2,17 +2,21 @@
 
 .container {
   margin: 0 auto;
-  min-width: $min-width-container;
-  max-width: $max-width-container;
+  min-width: $mobile-width-container;
+  max-width: $mobile-width-container;
   padding-left: $horizontal-phone-padding;
   padding-right: $horizontal-phone-padding;
 
   @media (min-width: $tablet-width) {
+    min-width: $tablet-width-container;
+    max-width: $tablet-width-container;
     padding-left: $horizontal-tablet-padding;
     padding-right: $horizontal-tablet-padding;
   }
 
   @media (min-width: $desktop-width) {
+    min-width: $desktop-width-container;
+    max-width: $desktop-width-container;
     padding-left: $horizontal-desktop-padding;
     padding-right: $horizontal-desktop-padding;
   }

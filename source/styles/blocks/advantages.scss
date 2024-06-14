@@ -1,5 +1,11 @@
 @use "../common/variables.scss";
 
+.advantages {
+  @media (min-width: $tablet-width) and (max-width: $pre-desktop) {
+    padding-top: 180px;
+  }
+}
+
 .advantages__list {
   list-style: none;
   padding: 0;

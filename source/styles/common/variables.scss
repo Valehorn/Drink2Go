@@ -36,8 +36,9 @@ $pre-desktop: 1439px;
 $desktop-width: 1440px;
 
 /* Контейнер */
-$min-width-container: 320px;
-$max-width-container: 1440px;
+$mobile-width-container: 320px;
+$tablet-width-container: 768px;
+$desktop-width-container: 1440px;
 
 /* Паддинги */
 $horizontal-phone-padding : 20px;

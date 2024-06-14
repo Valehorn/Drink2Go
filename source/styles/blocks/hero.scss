@@ -2,4 +2,16 @@
 
 .hero {
   background-color: $flat-white;
+  padding-bottom: 60px;
+  padding-top: 20px;
+
+  @media (min-width: $tablet-width) and (max-width: $pre-desktop) {
+    min-height: 640px;
+    padding-top: 60px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 30px;
+    padding-bottom: 84px;
+  }
 }

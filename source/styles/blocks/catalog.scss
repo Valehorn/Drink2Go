@@ -47,5 +47,7 @@
 }
 
 .catalog__order {
-  margin-right: 30px;
+  @media (min-width: $desktop-width) {
+    margin-right: 30px;
+  }
 }

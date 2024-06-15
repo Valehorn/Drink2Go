@@ -56,7 +56,16 @@
 }
 
 .order__filter-label {
+  pointer-events: none;
+}
+
+.order__filter-label--radio {
   padding-left: 25px;
+}
+
+.order__filter-label--switch {
+  position: relative;
+  padding-left: 60px;
 }
 
 .order__filter-title {
@@ -169,6 +178,71 @@
   list-style: none;
   padding: 0;
   margin: 0;
+}
+
+.order__country-item {
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+
+.order__input-switch {
+  position: absolute;
+  appearance: none;
+  border-radius: 12px;
+  width: 42px;
+  height: 24px;
+  background-color: $base-grey;
+  transition: background-color 0.5s ease;
+  cursor: pointer;
+
+  &:checked {
+    background-color: $base-primary;
+  }
+
+  &:disabled {
+    background-color: $light-grey;
+  }
+
+  &:disabled:hover,
+  &:disabled:focus-visible {
+    background-color: $light-grey;
+    outline: none;
+    cursor: auto;
+  }
+
+  &:hover,
+  &:focus-visible {
+    background-color: $primary-opacity;
+    outline: 2px solid $primary-lighter;
+    outline-offset: 0;
+  }
+
+  &::before {
+    position: absolute;
+    top: 50%;
+    left: 2px;
+    transform: translateY(-50%);
+    content: "";
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background-color: $base-white;
+    transition: left 0.3s ease;
+  }
+
+
+  &:checked::before {
+    left: 46%;
+  }
+
+  &:disabled::before {
+    background-color: $lightest-grey;
+  }
+
+  &:disabled:checked::before {
+    background-color: $base-grey;
+  }
 }
 
 .order__button {

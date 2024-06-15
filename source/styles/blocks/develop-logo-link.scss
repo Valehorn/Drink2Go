@@ -5,6 +5,8 @@
 
   @media (min-width: $tablet-width) {
     text-align: center;
+    padding-top: 30px;
+    padding-bottom: 40px;
   }
 
   /* &::after {
@@ -30,7 +32,7 @@
   line-height: 133%;
   color: $base-grey;
 
-/*   &::after {
+  &::after {
     position: absolute;
     right: -66px;
     top: 50%;
@@ -44,5 +46,5 @@
     mask-position: center;
     background-color: $base-grey;
     transition: background-color 0.3s ease;
-  } */
+  }
 }

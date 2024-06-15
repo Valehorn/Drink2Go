@@ -11,7 +11,8 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding-top: 15px;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 
   @media (max-width: $pre-tablet) {

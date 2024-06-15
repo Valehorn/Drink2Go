@@ -1,0 +1,32 @@
+@use "../common/variables.scss";
+
+.footer {
+  padding-top: 22px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 42px;
+  }
+}
+
+.footer__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 22px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 30px;
+  }
+}
+
+.footer__logo {
+  align-self: flex-start;
+}
+
+.footer__nav {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(3, 223px);
+    gap: 30px;
+  }
+}

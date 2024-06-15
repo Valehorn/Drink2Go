@@ -1,10 +1,40 @@
 @use "../common/variables.scss";
 
 .develop-logo-link {
+  /* position: relative; */
+
+  @media (min-width: $tablet-width) {
+    text-align: center;
+  }
+
+  /* &::after {
+    position: absolute;
+    right: -4px;
+    top: 50%;
+    transform: translateY(-50%);
+    content: "";
+    width: 112px;
+    height: 16px;
+    mask-image: url("../../icons/stack.svg#developer-logo");
+    mask-repeat: no-repeat;
+    mask-size: 112px 16px;
+    mask-position: center;
+    background-color: $base-grey;
+    transition: background-color 0.3s ease;
+  } */
+}
+
+.develop-logo-link__text {
   position: relative;
+  font-size: 12px;
+  line-height: 133%;
+  color: $base-grey;
 
   &::after {
     position: absolute;
+    right: -66px;
+    top: 50%;
+    transform: translateY(-50%);
     content: "";
     width: 112px;
     height: 16px;
@@ -15,9 +45,4 @@
     background-color: $base-grey;
     transition: background-color 0.3s ease;
   }
-}
-
-.develop-logo-link__text {
-  font-size: 12px;
-  line-height: 133%;
 }

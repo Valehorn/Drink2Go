@@ -26,8 +26,6 @@
 }
 
 .header__logo-description {
-  display: none;
-
   @media (min-width: $desktop-width) {
     display: block;
     font-size: 12px;
@@ -128,6 +126,10 @@
 
   @media (min-width: $desktop-width) {
     display: block;
+    font-family: $monserrat-medium;
+    font-size: 12px;
+    line-height: 133%;
+    text-transform: uppercase;
   }
 }
 

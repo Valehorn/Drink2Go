@@ -1,9 +1,34 @@
 @use "../common/variables.scss";
 
+.contacts__badge {
+  font-family: $monserrat-bold;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 143%;
+  letter-spacing: 0.02em;
+  color: $base-primary;
+  text-transform: none;
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 223px;
+  }
+}
+
 .contacts__list {
   list-style: none;
   padding: 0;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    max-width: 223px;
+  }
+}
+
+.contacts__item {
+  &:first-child {
+    margin-bottom: 16px;
+  }
 }
 
 .contacts__link {
@@ -11,10 +36,12 @@
 
   position: relative;
   color: $base-black;
+  padding-left: 13px;
 
   &::before {
     position: absolute;
-    left: -15px;
+    left: -4px;
+    top: 3px;
     content: "";
     width: 13px;
     height: 16px;

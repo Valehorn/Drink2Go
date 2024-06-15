@@ -30,32 +30,32 @@
       <p class="header__logo-description logo__description">Интернет-магазин<br>кофейных напитков</p>
     </a>
     <nav class="header__nav">
-      <ul class="header__nav-user-list">
+      <ul class="header__nav-user-list nav-list">
         <li class="header__nav-user-item">
           <button class="header__nav-button header__nav-button--user" type="button">
-            <span class="header__nav-user-item-description nav-item">Войти</span>
+            <span class="header__nav-user-item-description">Войти</span>
           </button>
         </li>
         <li class="header__nav-user-item">
           <button class="header__nav-button header__nav-button--basket" type="button">
-            <span class="header__nav-user-item-description nav-item">Корзина</span>
+            <span class="header__nav-user-item-description">Корзина</span>
           </button>
         </li>
       </ul>
       <button class="header__nav-button-burger" type="button">
         <span class="visually-hidden">Кнопка бургер меню</span>
       </button>
-      <ul class="header__nav-list">
-        <li class="header__nav-item  nav-item header__nav-item--current">
+      <ul class="header__nav-list nav-list">
+        <li class="header__nav-item header__nav-item--current">
           <a class="header__nav-link" href="#">Главная</a>
         </li>
-        <li class="header__nav-item nav-item">
+        <li class="header__nav-item">
           <a class="header__nav-link" href="#">Каталог</a>
         </li>
-        <li class="header__nav-item nav-item">
+        <li class="header__nav-item">
           <a class="header__nav-link" href="#">Доставка</a>
         </li>
-        <li class="header__nav-item nav-item">
+        <li class="header__nav-item">
           <a class="header__nav-link" href="#">О нас</a>
         </li>
       </ul>
@@ -150,7 +150,7 @@
     </section>
     <section class="catalog">
       <div class="catalog__wrapper container">
-        <p class="catalog__badge badge">Каталог</p>
+        <p class="catalog__badge badge" id="order">Каталог</p>
         <h2 class="catalog__title title">Каталог кофейных напитков</h2>
         <section class="catalog__order order">
           <h2 class="visually-hidden">Заказать</h2>
@@ -225,240 +225,240 @@
           </form>
         </section>
         <section class="cards">
-            <h2 class="visually-hidden">Каталог товаров</h2>
-            <div class="cards__sort" id="order">
-              <label class="cards__sort-title" for="sort-select">Сортировка:</label>
-              <select class="cards__sort-select" name="sort-select" id="sort-select">
-                <option value="default" selected>по умолчанию</option>
-                <option value="price bigger">дешевле</option>
-                <option value="price lower">дороже</option>
-                <option value="popular">популярные</option>
-              </select>
-            </div>
-            <ul class="cards__list">
-              <li class="cards__item">
-                <article class="card">
-                  <h2 class="visually-hidden">Карточка товара</h2>
-                  <a class="card__picture" href="404.html">
-                    <picture>
-                      <source type="image/webp" media="(min-width: 1440px)"
-                        srcset="images/cards/coffee-can-1-desktop@1x.webp 1x, images/cards/coffee-can-1-desktop@2x.webp 2x"
-                        width="130" height="188">
-                      <source type="image/webp" media="(min-width: 768px)"
-                        srcset="images/cards/coffee-can-1-tablet@1x.webp 1x, images/cards/coffee-can-1-tablet@2x.webp 2x"
-                        width="130" height="188">
-                      <source type="image/jpeg" media="(min-width: 1440px)"
-                        srcset="images/cards/coffee-can-1-desktop@1x.jpg 1x, images/cards/coffee--can-1-desktop@2x.jpg 2x"
-                        width="130" height="188">
-                      <source type="image/jpeg" media="(min-width: 768px)"
-                        srcset="images/cards/coffee-can-1-tablet@1x.jpg 1x, images/cards/coffee-can-1-tablet@1x.jpg 2x"
-                        width="130" height="188">
-                      <source type="image/webp" media="(max-width: 767px)"
-                        srcset="images/cards/coffee-can-1-mobile@1x.webp 1x, images/cards/coffee-can-1-mobile@2x.webp 2x"
-                        width="130" height="188">
-                      <img class="card__image" src="images/cards/coffee-can-1-mobile@1x.jpg"
-                        srcset="images/cards/coffee-can-1-mobile@2x.jpg 2x" width="130" height="188"
-                        alt="Изображение в карточке товара." loading="lazy">
-                    </picture>
-                  </a>
-                  <a class="card__link" href="404.html">
-                    <p class="card__title">Декаф Флэт Уайт</p>
-                  </a>
-                  <p class="card__description">Кофе без кофеина из Эфиопии
-                    с натуральным фермерским молоком</p>
-                  <div class="card__button-price-group">
-                    <p class="card__price price">225<span>&#8381;</span></p>
-                    <button class="card__button card__button--basket button button--primary" type="button"><span>В
-                        корзину</span></button>
-                  </div>
-                </article>
-              </li>
-              <li class="cards__item">
-                <article class="card">
-                  <h2 class="visually-hidden">Карточка товара</h2>
-                  <a class="card__picture" href="404.html">
-                    <picture>
-                      <source type="image/webp" media="(min-width: 1440px)"
-                        srcset="images/cards/coffee-can-2-desktop@1x.webp 1x, images/cards/coffee-can-2-desktop@2x.webp 2x"
-                        width="130" height="188">
-                      <source type="image/webp" media="(min-width: 768px)"
-                        srcset="images/cards/coffee-can-2-tablet@1x.webp 1x, images/cards/coffee-can-2-tablet@2x.webp 2x"
-                        width="130" height="188">
-                      <source type="image/jpeg" media="(min-width: 1440px)"
-                        srcset="images/cards/coffee-can-2-desktop@1x.jpg 1x, images/cards/coffee--can-2-desktop@2x.jpg 2x"
-                        width="130" height="188">
-                      <source type="image/jpeg" media="(min-width: 768px)"
-                        srcset="images/cards/coffee-can-2-tablet@1x.jpg 1x, images/cards/coffee-can-2-tablet@1x.jpg 2x"
-                        width="130" height="188">
-                      <source type="image/webp" media="(max-width: 767px)"
-                        srcset="images/cards/coffee-can-2-mobile@1x.webp 1x, images/cards/coffee-can-2-mobile@2x.webp 2x"
-                        width="130" height="188">
-                      <img class="card__image" src="images/cards/coffee-can-2-mobile@1x.jpg"
-                        srcset="images/cards/coffee-can-2-mobile@2x.jpg 2x" width="130" height="188"
-                        alt="Изображение в карточке товара." loading="lazy">
-                    </picture>
-                  </a>
-                  <a class="card__link" href="404.html">
-                    <p class="card__title">Декаф Флэт Уайт</p>
-                  </a>
-                  <p class="card__description">Кофе без кофеина из Эфиопии
-                    с натуральным фермерским молоком</p>
-                  <div class="card__button-price-group">
-                    <p class="card__price price">225<span>&#8381;</span></p>
-                    <button class="card__button card__button--basket button button--primary" type="button"><span>В
-                        корзину</span></button>
-                  </div>
-                </article>
-              </li>
-              <li class="cards__item">
-                <article class="card">
-                  <h2 class="visually-hidden">Карточка товара</h2>
-                  <a class="card__picture" href="404.html">
-                    <picture>
-                      <source type="image/webp" media="(min-width: 1440px)"
-                        srcset="images/cards/coffee-can-3-desktop@1x.webp 1x, images/cards/coffee-can-3-desktop@2x.webp 2x"
-                        width="130" height="188">
-                      <source type="image/webp" media="(min-width: 768px)"
-                        srcset="images/cards/coffee-can-3-tablet@1x.webp 1x, images/cards/coffee-can-3-tablet@2x.webp 2x"
-                        width="130" height="188">
-                      <source type="image/jpeg" media="(min-width: 1440px)"
-                        srcset="images/cards/coffee-can-3-desktop@1x.jpg 1x, images/cards/coffee--can-3-desktop@2x.jpg 2x"
-                        width="130" height="188">
-                      <source type="image/jpeg" media="(min-width: 768px)"
-                        srcset="images/cards/coffee-can-3-tablet@1x.jpg 1x, images/cards/coffee-can-3-tablet@1x.jpg 2x"
-                        width="130" height="188">
-                      <source type="image/webp" media="(max-width: 767px)"
-                        srcset="images/cards/coffee-can-3-mobile@1x.webp 1x, images/cards/coffee-can-3-mobile@2x.webp 2x"
-                        width="130" height="188">
-                      <img class="card__image" src="images/cards/coffee-can-3-mobile@1x.jpg"
-                        srcset="images/cards/coffee-can-3-mobile@2x.jpg 2x" width="130" height="188"
-                        alt="Изображение в карточке товара." loading="lazy">
-                    </picture>
-                  </a>
-                  <a class="card__link" href="404.html">
-                    <p class="card__title">Декаф Флэт Уайт</p>
-                  </a>
-                  <p class="card__description">Кофе без кофеина из Эфиопии
-                    с натуральным фермерским молоком</p>
-                  <div class="card__button-price-group">
-                    <p class="card__price price">225<span>&#8381;</span></p>
-                    <button class="card__button card__button--basket button button--primary" type="button"><span>В
-                        корзину</span></button>
-                  </div>
-                </article>
-              </li>
-              <li class="cards__item">
-                <article class="card">
-                  <h2 class="visually-hidden">Карточка товара</h2>
-                  <a class="card__picture" href="404.html">
-                    <picture>
-                      <source type="image/webp" media="(min-width: 1440px)"
-                        srcset="images/cards/coffee-can-4-desktop@1x.webp 1x, images/cards/coffee-can-4-desktop@2x.webp 2x"
-                        width="130" height="188">
-                      <source type="image/webp" media="(min-width: 768px)"
-                        srcset="images/cards/coffee-can-4-tablet@1x.webp 1x, images/cards/coffee-can-4-tablet@2x.webp 2x"
-                        width="130" height="188">
-                      <source type="image/jpeg" media="(min-width: 1440px)"
-                        srcset="images/cards/coffee-can-4-desktop@1x.jpg 1x, images/cards/coffee--can-4-desktop@2x.jpg 2x"
-                        width="130" height="188">
-                      <source type="image/jpeg" media="(min-width: 768px)"
-                        srcset="images/cards/coffee-can-4-tablet@1x.jpg 1x, images/cards/coffee-can-4-tablet@1x.jpg 2x"
-                        width="130" height="188">
-                      <source type="image/webp" media="(max-width: 767px)"
-                        srcset="images/cards/coffee-can-4-mobile@1x.webp 1x, images/cards/coffee-can-4-mobile@2x.webp 2x"
-                        width="130" height="188">
-                      <img class="card__image" src="images/cards/coffee-can-4-mobile@1x.jpg"
-                        srcset="images/cards/coffee-can-4-mobile@2x.jpg 2x" width="130" height="188"
-                        alt="Изображение в карточке товара." loading="lazy">
-                    </picture>
-                  </a>
-                  <a class="card__link" href="404.html">
-                    <p class="card__title">Декаф Флэт Уайт</p>
-                  </a>
-                  <p class="card__description">Кофе без кофеина из Эфиопии
-                    с натуральным фермерским молоком</p>
-                  <div class="card__button-price-group">
-                    <p class="card__price price">225<span>&#8381;</span></p>
-                    <button class="card__button card__button--basket button button--primary" type="button"><span>В
-                        корзину</span></button>
-                  </div>
-                </article>
-              </li>
-              <li class="cards__item">
-                <article class="card">
-                  <h2 class="visually-hidden">Карточка товара</h2>
-                  <a class="card__picture" href="404.html">
-                    <picture>
-                      <source type="image/webp" media="(min-width: 1440px)"
-                        srcset="images/cards/coffee-can-5-desktop@1x.webp 1x, images/cards/coffee-can-5-desktop@2x.webp 2x"
-                        width="130" height="188">
-                      <source type="image/webp" media="(min-width: 768px)"
-                        srcset="images/cards/coffee-can-5-tablet@1x.webp 1x, images/cards/coffee-can-5-tablet@2x.webp 2x"
-                        width="130" height="188">
-                      <source type="image/jpeg" media="(min-width: 1440px)"
-                        srcset="images/cards/coffee-can-5-desktop@1x.jpg 1x, images/cards/coffee--can-5-desktop@2x.jpg 2x"
-                        width="130" height="188">
-                      <source type="image/jpeg" media="(min-width: 768px)"
-                        srcset="images/cards/coffee-can-5-tablet@1x.jpg 1x, images/cards/coffee-can-5-tablet@1x.jpg 2x"
-                        width="130" height="188">
-                      <source type="image/webp" media="(max-width: 767px)"
-                        srcset="images/cards/coffee-can-5-mobile@1x.webp 1x, images/cards/coffee-can-5-mobile@2x.webp 2x"
-                        width="130" height="188">
-                      <img class="card__image" src="images/cards/coffee-can-5-mobile@1x.jpg"
-                        srcset="images/cards/coffee-can-5-mobile@2x.jpg 2x" width="130" height="188"
-                        alt="Изображение в карточке товара." loading="lazy">
-                    </picture>
-                  </a>
-                  <a class="card__link" href="404.html">
-                    <p class="card__title">Декаф Флэт Уайт</p>
-                  </a>
-                  <p class="card__description">Кофе без кофеина из Эфиопии
-                    с натуральным фермерским молоком</p>
-                  <div class="card__button-price-group">
-                    <p class="card__price price">225<span>&#8381;</span></p>
-                    <button class="card__button card__button--basket button button--primary" type="button"><span>В
-                        корзину</span></button>
-                  </div>
-                </article>
-              </li>
-              <li class="cards__item">
-                <article class="card">
-                  <h2 class="visually-hidden">Карточка товара</h2>
-                  <a class="card__picture" href="404.html">
-                    <picture>
-                      <source type="image/webp" media="(min-width: 1440px)"
-                        srcset="images/cards/coffee-can-6-desktop@1x.webp 1x, images/cards/coffee-can-6-desktop@2x.webp 2x"
-                        width="130" height="188">
-                      <source type="image/webp" media="(min-width: 768px)"
-                        srcset="images/cards/coffee-can-6-tablet@1x.webp 1x, images/cards/coffee-can-6-tablet@2x.webp 2x"
-                        width="130" height="188">
-                      <source type="image/jpeg" media="(min-width: 1440px)"
-                        srcset="images/cards/coffee-can-6-desktop@1x.jpg 1x, images/cards/coffee--can-6-desktop@2x.jpg 2x"
-                        width="130" height="188">
-                      <source type="image/jpeg" media="(min-width: 768px)"
-                        srcset="images/cards/coffee-can-6-tablet@1x.jpg 1x, images/cards/coffee-can-6-tablet@1x.jpg 2x"
-                        width="130" height="188">
-                      <source type="image/webp" media="(max-width: 767px)"
-                        srcset="images/cards/coffee-can-6-mobile@1x.webp 1x, images/cards/coffee-can-6-mobile@2x.webp 2x"
-                        width="130" height="188">
-                      <img class="card__image" src="images/cards/coffee-can-6-mobile@1x.jpg"
-                        srcset="images/cards/coffee-can-6-mobile@2x.jpg 2x" width="130" height="188"
-                        alt="Изображение в карточке товара." loading="lazy">
-                    </picture>
-                  </a>
-                  <a class="card__link" href="404.html">
-                    <p class="card__title">Декаф Флэт Уайт</p>
-                  </a>
-                  <p class="card__description">Кофе без кофеина из Эфиопии
-                    с натуральным фермерским молоком</p>
-                  <div class="card__button-price-group">
-                    <p class="card__price price">225<span>&#8381;</span></p>
-                    <button class="card__button card__button--basket button button--primary" type="button"><span>В
-                        корзину</span></button>
-                  </div>
-                </article>
-              </li>
-            </ul>
+          <h2 class="visually-hidden">Каталог товаров</h2>
+          <div class="cards__sort">
+            <label class="cards__sort-title" for="sort-select">Сортировка:</label>
+            <select class="cards__sort-select" name="sort-select" id="sort-select">
+              <option value="default" selected>по умолчанию</option>
+              <option value="price bigger">дешевле</option>
+              <option value="price lower">дороже</option>
+              <option value="popular">популярные</option>
+            </select>
+          </div>
+          <ul class="cards__list">
+            <li class="cards__item">
+              <article class="card">
+                <h2 class="visually-hidden">Карточка товара</h2>
+                <a class="card__picture" href="404.html">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1440px)"
+                      srcset="images/cards/coffee-can-1-desktop@1x.webp 1x, images/cards/coffee-can-1-desktop@2x.webp 2x"
+                      width="130" height="188">
+                    <source type="image/webp" media="(min-width: 768px)"
+                      srcset="images/cards/coffee-can-1-tablet@1x.webp 1x, images/cards/coffee-can-1-tablet@2x.webp 2x"
+                      width="130" height="188">
+                    <source type="image/jpeg" media="(min-width: 1440px)"
+                      srcset="images/cards/coffee-can-1-desktop@1x.jpg 1x, images/cards/coffee--can-1-desktop@2x.jpg 2x"
+                      width="130" height="188">
+                    <source type="image/jpeg" media="(min-width: 768px)"
+                      srcset="images/cards/coffee-can-1-tablet@1x.jpg 1x, images/cards/coffee-can-1-tablet@1x.jpg 2x"
+                      width="130" height="188">
+                    <source type="image/webp" media="(max-width: 767px)"
+                      srcset="images/cards/coffee-can-1-mobile@1x.webp 1x, images/cards/coffee-can-1-mobile@2x.webp 2x"
+                      width="130" height="188">
+                    <img class="card__image" src="images/cards/coffee-can-1-mobile@1x.jpg"
+                      srcset="images/cards/coffee-can-1-mobile@2x.jpg 2x" width="130" height="188"
+                      alt="Изображение в карточке товара." loading="lazy">
+                  </picture>
+                </a>
+                <a class="card__link" href="404.html">
+                  <p class="card__title">Декаф Флэт Уайт</p>
+                </a>
+                <p class="card__description">Кофе без кофеина из Эфиопии
+                  с натуральным фермерским молоком</p>
+                <div class="card__button-price-group">
+                  <p class="card__price price">225<span>&#8381;</span></p>
+                  <button class="card__button card__button--basket button button--primary" type="button"><span>В
+                      корзину</span></button>
+                </div>
+              </article>
+            </li>
+            <li class="cards__item">
+              <article class="card">
+                <h2 class="visually-hidden">Карточка товара</h2>
+                <a class="card__picture" href="404.html">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1440px)"
+                      srcset="images/cards/coffee-can-2-desktop@1x.webp 1x, images/cards/coffee-can-2-desktop@2x.webp 2x"
+                      width="130" height="188">
+                    <source type="image/webp" media="(min-width: 768px)"
+                      srcset="images/cards/coffee-can-2-tablet@1x.webp 1x, images/cards/coffee-can-2-tablet@2x.webp 2x"
+                      width="130" height="188">
+                    <source type="image/jpeg" media="(min-width: 1440px)"
+                      srcset="images/cards/coffee-can-2-desktop@1x.jpg 1x, images/cards/coffee--can-2-desktop@2x.jpg 2x"
+                      width="130" height="188">
+                    <source type="image/jpeg" media="(min-width: 768px)"
+                      srcset="images/cards/coffee-can-2-tablet@1x.jpg 1x, images/cards/coffee-can-2-tablet@1x.jpg 2x"
+                      width="130" height="188">
+                    <source type="image/webp" media="(max-width: 767px)"
+                      srcset="images/cards/coffee-can-2-mobile@1x.webp 1x, images/cards/coffee-can-2-mobile@2x.webp 2x"
+                      width="130" height="188">
+                    <img class="card__image" src="images/cards/coffee-can-2-mobile@1x.jpg"
+                      srcset="images/cards/coffee-can-2-mobile@2x.jpg 2x" width="130" height="188"
+                      alt="Изображение в карточке товара." loading="lazy">
+                  </picture>
+                </a>
+                <a class="card__link" href="404.html">
+                  <p class="card__title">Декаф Флэт Уайт</p>
+                </a>
+                <p class="card__description">Кофе без кофеина из Эфиопии
+                  с натуральным фермерским молоком</p>
+                <div class="card__button-price-group">
+                  <p class="card__price price">225<span>&#8381;</span></p>
+                  <button class="card__button card__button--basket button button--primary" type="button"><span>В
+                      корзину</span></button>
+                </div>
+              </article>
+            </li>
+            <li class="cards__item">
+              <article class="card">
+                <h2 class="visually-hidden">Карточка товара</h2>
+                <a class="card__picture" href="404.html">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1440px)"
+                      srcset="images/cards/coffee-can-3-desktop@1x.webp 1x, images/cards/coffee-can-3-desktop@2x.webp 2x"
+                      width="130" height="188">
+                    <source type="image/webp" media="(min-width: 768px)"
+                      srcset="images/cards/coffee-can-3-tablet@1x.webp 1x, images/cards/coffee-can-3-tablet@2x.webp 2x"
+                      width="130" height="188">
+                    <source type="image/jpeg" media="(min-width: 1440px)"
+                      srcset="images/cards/coffee-can-3-desktop@1x.jpg 1x, images/cards/coffee--can-3-desktop@2x.jpg 2x"
+                      width="130" height="188">
+                    <source type="image/jpeg" media="(min-width: 768px)"
+                      srcset="images/cards/coffee-can-3-tablet@1x.jpg 1x, images/cards/coffee-can-3-tablet@1x.jpg 2x"
+                      width="130" height="188">
+                    <source type="image/webp" media="(max-width: 767px)"
+                      srcset="images/cards/coffee-can-3-mobile@1x.webp 1x, images/cards/coffee-can-3-mobile@2x.webp 2x"
+                      width="130" height="188">
+                    <img class="card__image" src="images/cards/coffee-can-3-mobile@1x.jpg"
+                      srcset="images/cards/coffee-can-3-mobile@2x.jpg 2x" width="130" height="188"
+                      alt="Изображение в карточке товара." loading="lazy">
+                  </picture>
+                </a>
+                <a class="card__link" href="404.html">
+                  <p class="card__title">Декаф Флэт Уайт</p>
+                </a>
+                <p class="card__description">Кофе без кофеина из Эфиопии
+                  с натуральным фермерским молоком</p>
+                <div class="card__button-price-group">
+                  <p class="card__price price">225<span>&#8381;</span></p>
+                  <button class="card__button card__button--basket button button--primary" type="button"><span>В
+                      корзину</span></button>
+                </div>
+              </article>
+            </li>
+            <li class="cards__item">
+              <article class="card">
+                <h2 class="visually-hidden">Карточка товара</h2>
+                <a class="card__picture" href="404.html">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1440px)"
+                      srcset="images/cards/coffee-can-4-desktop@1x.webp 1x, images/cards/coffee-can-4-desktop@2x.webp 2x"
+                      width="130" height="188">
+                    <source type="image/webp" media="(min-width: 768px)"
+                      srcset="images/cards/coffee-can-4-tablet@1x.webp 1x, images/cards/coffee-can-4-tablet@2x.webp 2x"
+                      width="130" height="188">
+                    <source type="image/jpeg" media="(min-width: 1440px)"
+                      srcset="images/cards/coffee-can-4-desktop@1x.jpg 1x, images/cards/coffee--can-4-desktop@2x.jpg 2x"
+                      width="130" height="188">
+                    <source type="image/jpeg" media="(min-width: 768px)"
+                      srcset="images/cards/coffee-can-4-tablet@1x.jpg 1x, images/cards/coffee-can-4-tablet@1x.jpg 2x"
+                      width="130" height="188">
+                    <source type="image/webp" media="(max-width: 767px)"
+                      srcset="images/cards/coffee-can-4-mobile@1x.webp 1x, images/cards/coffee-can-4-mobile@2x.webp 2x"
+                      width="130" height="188">
+                    <img class="card__image" src="images/cards/coffee-can-4-mobile@1x.jpg"
+                      srcset="images/cards/coffee-can-4-mobile@2x.jpg 2x" width="130" height="188"
+                      alt="Изображение в карточке товара." loading="lazy">
+                  </picture>
+                </a>
+                <a class="card__link" href="404.html">
+                  <p class="card__title">Декаф Флэт Уайт</p>
+                </a>
+                <p class="card__description">Кофе без кофеина из Эфиопии
+                  с натуральным фермерским молоком</p>
+                <div class="card__button-price-group">
+                  <p class="card__price price">225<span>&#8381;</span></p>
+                  <button class="card__button card__button--basket button button--primary" type="button"><span>В
+                      корзину</span></button>
+                </div>
+              </article>
+            </li>
+            <li class="cards__item">
+              <article class="card">
+                <h2 class="visually-hidden">Карточка товара</h2>
+                <a class="card__picture" href="404.html">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1440px)"
+                      srcset="images/cards/coffee-can-5-desktop@1x.webp 1x, images/cards/coffee-can-5-desktop@2x.webp 2x"
+                      width="130" height="188">
+                    <source type="image/webp" media="(min-width: 768px)"
+                      srcset="images/cards/coffee-can-5-tablet@1x.webp 1x, images/cards/coffee-can-5-tablet@2x.webp 2x"
+                      width="130" height="188">
+                    <source type="image/jpeg" media="(min-width: 1440px)"
+                      srcset="images/cards/coffee-can-5-desktop@1x.jpg 1x, images/cards/coffee--can-5-desktop@2x.jpg 2x"
+                      width="130" height="188">
+                    <source type="image/jpeg" media="(min-width: 768px)"
+                      srcset="images/cards/coffee-can-5-tablet@1x.jpg 1x, images/cards/coffee-can-5-tablet@1x.jpg 2x"
+                      width="130" height="188">
+                    <source type="image/webp" media="(max-width: 767px)"
+                      srcset="images/cards/coffee-can-5-mobile@1x.webp 1x, images/cards/coffee-can-5-mobile@2x.webp 2x"
+                      width="130" height="188">
+                    <img class="card__image" src="images/cards/coffee-can-5-mobile@1x.jpg"
+                      srcset="images/cards/coffee-can-5-mobile@2x.jpg 2x" width="130" height="188"
+                      alt="Изображение в карточке товара." loading="lazy">
+                  </picture>
+                </a>
+                <a class="card__link" href="404.html">
+                  <p class="card__title">Декаф Флэт Уайт</p>
+                </a>
+                <p class="card__description">Кофе без кофеина из Эфиопии
+                  с натуральным фермерским молоком</p>
+                <div class="card__button-price-group">
+                  <p class="card__price price">225<span>&#8381;</span></p>
+                  <button class="card__button card__button--basket button button--primary" type="button"><span>В
+                      корзину</span></button>
+                </div>
+              </article>
+            </li>
+            <li class="cards__item">
+              <article class="card">
+                <h2 class="visually-hidden">Карточка товара</h2>
+                <a class="card__picture" href="404.html">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1440px)"
+                      srcset="images/cards/coffee-can-6-desktop@1x.webp 1x, images/cards/coffee-can-6-desktop@2x.webp 2x"
+                      width="130" height="188">
+                    <source type="image/webp" media="(min-width: 768px)"
+                      srcset="images/cards/coffee-can-6-tablet@1x.webp 1x, images/cards/coffee-can-6-tablet@2x.webp 2x"
+                      width="130" height="188">
+                    <source type="image/jpeg" media="(min-width: 1440px)"
+                      srcset="images/cards/coffee-can-6-desktop@1x.jpg 1x, images/cards/coffee--can-6-desktop@2x.jpg 2x"
+                      width="130" height="188">
+                    <source type="image/jpeg" media="(min-width: 768px)"
+                      srcset="images/cards/coffee-can-6-tablet@1x.jpg 1x, images/cards/coffee-can-6-tablet@1x.jpg 2x"
+                      width="130" height="188">
+                    <source type="image/webp" media="(max-width: 767px)"
+                      srcset="images/cards/coffee-can-6-mobile@1x.webp 1x, images/cards/coffee-can-6-mobile@2x.webp 2x"
+                      width="130" height="188">
+                    <img class="card__image" src="images/cards/coffee-can-6-mobile@1x.jpg"
+                      srcset="images/cards/coffee-can-6-mobile@2x.jpg 2x" width="130" height="188"
+                      alt="Изображение в карточке товара." loading="lazy">
+                  </picture>
+                </a>
+                <a class="card__link" href="404.html">
+                  <p class="card__title">Декаф Флэт Уайт</p>
+                </a>
+                <p class="card__description">Кофе без кофеина из Эфиопии
+                  с натуральным фермерским молоком</p>
+                <div class="card__button-price-group">
+                  <p class="card__price price">225<span>&#8381;</span></p>
+                  <button class="card__button card__button--basket button button--primary" type="button"><span>В
+                      корзину</span></button>
+                </div>
+              </article>
+            </li>
+          </ul>
         </section>
       </div>
     </section>
@@ -508,71 +508,73 @@
     </section>
   </main>
   <footer class="footer container">
-    <a class="footer__logo logo" href="index.html">
-      <picture>
-        <source type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-drink2go-desktop.svg" width="170"
-          height="36">
-        <source type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-drink2go-desktop.svg" width="170"
-          height="36">
-        <img class="logo__image" src="images/logo-drink2go-tablet.svg" width="82" height="36" alt="Логотип Drink2Go.">
-      </picture>
-      <p class="footer__logo-description logo__description">Интернет-магазин<br>кофейных напитков</p>
-    </a>
-    <ul class="social-list">
-      <li class="social-list__item">
-        <a class="social-list__link social-list__link--vk" href="#">
-          <span class="visually-hidden">Вконтакте</span>
-        </a>
-      </li>
-      <li class="social-list__item">
-        <a class="social-list__link social-list__link--pinterest" href="#">
-          <span class="visually-hidden">Pinterest</span>
-        </a>
-      </li>
-      <li class="social-list__item">
-        <a class="social-list__link social-list__link--classmates" href="#">
-          <span class="visually-hidden">Одноклассники</span>
-        </a>
-      </li>
-    </ul>
+    <header class="footer__header"><!-- ! -->
+      <a class="footer__logo logo" href="index.html">
+        <picture>
+          <source type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-drink2go-desktop.svg" width="170"
+            height="36">
+          <source type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-drink2go-desktop.svg" width="170"
+            height="36">
+          <img class="logo__image" src="images/logo-drink2go-tablet.svg" width="82" height="36" alt="Логотип Drink2Go.">
+        </picture>
+        <p class="footer__logo-description logo__description">Интернет-магазин<br>кофейных напитков</p>
+      </a>
+      <ul class="social-list">
+        <li class="social-list__item">
+          <a class="social-list__link social-list__link--vk" href="#">
+            <span class="visually-hidden">Вконтакте</span>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link social-list__link--pinterest" href="#">
+            <span class="visually-hidden">Pinterest</span>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link social-list__link--classmates" href="#">
+            <span class="visually-hidden">Одноклассники</span>
+          </a>
+        </li>
+      </ul>
+    </header>
     <nav class="footer__nav">
-      <div class="store">
-        <h2 class="store__badge badge">Интернет магазин</h2>
-        <ul class="store__list">
-          <li class="store__item nav-item">
-            <a class="store__link" href="#">Каталог</a>
-          </li>
-          <li class="store__item nav-item">
-            <a class="store__link" href="#">Доставка</a>
-          </li>
-          <li class="store__item nav-item">
-            <a class="store__link" href="#">Способы оплаты</a>
-          </li>
-          <li class="store__item nav-item">
-            <a class="store__link" href="#">О нас</a>
-          </li>
-        </ul>
-      </div>
-      <div class="media">
+        <div class="store footer-element"><!-- ! -->
+          <h2 class="store__badge badge">Интернет магазин</h2>
+          <ul class="store__list nav-list">
+            <li class="store__item">
+              <a class="store__link" href="#">Каталог</a>
+            </li>
+            <li class="store__item">
+              <a class="store__link" href="#">Доставка</a>
+            </li>
+            <li class="store__item">
+              <a class="store__link" href="#">Способы оплаты</a>
+            </li>
+            <li class="store__item">
+              <a class="store__link" href="#">О нас</a>
+            </li>
+          </ul>
+        </div>
+      <div class="media footer-element"><!-- ! -->
         <h2 class="media__badge badge">Медиа</h2>
-        <ul class="media__list">
-          <li class="media__item nav-item">
+        <ul class="media__list nav-list">
+          <li class="media__item">
             <a class="media__link" href="#">Блог</a>
           </li>
-          <li class="media__item nav-item">
+          <li class="media__item">
             <a class="media__link" href="#">Информация для СМИ</a>
           </li>
-          <li class="media__item nav-item">
+          <li class="media__item">
             <a class="media__link" href="#">Правовая информация</a>
           </li>
         </ul>
       </div>
-      <div class="contacts">
+      <div class="contacts footer-element"><!-- ! -->
         <h2 class="contacts__badge badge">Контакты</h2>
         <ul class="contacts__list">
           <li class="contacts__item">
             <a class="contacts__link contacts__link--address" href="#">
-              <address class="contacts__address">Санкт-Петербург, набережная реки Карповки, дом 5</address>
+              <address class="contacts__address">Санкт-Петербург, набережная реки &ensp;Карповки, дом 5</address>
             </a>
           </li>
           <li class="contacts__item">
@@ -581,8 +583,8 @@
         </ul>
       </div>
     </nav>
-    <a class="develop-logo-link" href="https://htmlacademy.ru/">
-      <span class="develop-logo-link__text">Разработано в</span>
+    <a class="develop-logo-link footer-element container" href="https://htmlacademy.ru/">
+      <span class="develop-logo-link__text">Разработано в HTML Academy</span>
     </a>
   </footer>
 </body>

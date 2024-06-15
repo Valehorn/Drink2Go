@@ -14,10 +14,11 @@
 /* BLOCKS */
 /* primary */
 @import "./blocks/header.scss";
+@import "./blocks/footer.scss";
 
 /* BLOCKS */
 /* secondary */
-@import "./blocks/nav-item.scss";
+@import "./blocks/nav-list.scss";
 @import "./blocks/hero.scss";
 @import "./blocks/slider.scss";
 @import "./blocks/advantages.scss";
@@ -28,6 +29,7 @@
 @import "./blocks/social-list.scss";
 @import "./blocks/pagination.scss";
 @import "./blocks/map.scss";
+@import "./blocks/footer-element.scss";
 @import "./blocks/store.scss";
 @import "./blocks/media.scss";
 @import "./blocks/contacts.scss";

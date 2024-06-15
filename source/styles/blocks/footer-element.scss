@@ -1,0 +1,30 @@
+@use "../common/variables.scss";
+
+.footer-element {
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  &:not(:last-child) {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 15px;
+  }
+
+  @media (max-width: $pre-tablet) {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      top: 0;
+      content: "";
+      height: 1px;
+      width: 100vw;
+      background-color: $base-secondary;
+      box-shadow: 100vw 0 $base-secondary, -100vw 0 $base-secondary;
+    }
+  }
+}

@@ -1,20 +1,54 @@
 @use "../common/variables.scss";
 
+.card {
+  background-color: $base-white;
+  padding: 40px 20px 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 50px 30px 30px;
+  }
+}
+
+.card__picture {
+  margin-bottom: 24px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 30px;
+  }
+}
+
 .card__title {
   font-family: $monserrat-bold;
   font-size: 18px;
   line-height: 178%;
   color: $base-black;
   margin: 0;
+  margin-bottom: 4px;
 
   @media (min-width: $tablet-width) {
     font-size: 24px;
     line-height: 150%;
+    margin-bottom: 10px;
   }
 }
 
 .card__description {
   margin: 0;
+  margin-bottom: 16px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
+  }
+}
+
+.card__button-price-group {
+  display: flex;
+  gap: 0 50px;
+
+  @media (min-width: $tablet-width) {
+    gap: 0;
+    justify-content: space-between;
+  }
 }
 
 .card__button {

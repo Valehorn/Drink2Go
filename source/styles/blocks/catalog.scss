@@ -1,45 +1,51 @@
 @use "../common/variables.scss";
 
 .catalog {
+  display: flex;
+  flex-direction: column;
   background-color: $lightest-grey;
-}
+  padding-top: 50px;
+  padding-bottom: 40px;
 
-.catalog__sort-title,
-.catalog__sort-select {
-  font-size: 16px;
-  line-height: 150%;
-  font-family: $monserrat-semiBold;
-}
+  @media (min-width: $tablet-width) {
+    padding-top: 80px;
+    padding-bottom: 70px;
+  }
 
-.catalog__sort-title--arrow {
-  position: relative;
-
-  &::after {
-    position: absolute;
-    top: 7px;
-    right: -143px;
-    content: "";
-    width: 10px;
-    height: 6px;
-    mask-image: url("../../icons/stack.svg#arrow-down");
-    mask-repeat: no-repeat;
-    mask-size: 10px 6px;
-    mask-position: center;
-    background-color: $base-primary;
-    pointer-events: none;
+  @media (min-width: $desktop-width) {
+    display: block;
+    padding-top: 100px;
+    padding-bottom: 60px;
   }
 }
 
-.catalog__sort-select {
-  color: $base-primary;
-  appearance: none;
-  border: none;
-  background-color: $lightest-grey;
-  cursor: pointer;
+.catalog__wrapper {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+  }
 }
 
-.catalog__card-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+.catalog__badge {
+  text-align: center;
+  margin-bottom: 4px;
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1 / -1;
+    justify-self: center;
+  }
+}
+
+.catalog__title {
+  text-align: center;
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1 / -1;
+    justify-self: center;
+    margin-bottom: 40px;
+  }
+}
+
+.catalog__order {
+  margin-right: 30px;
 }

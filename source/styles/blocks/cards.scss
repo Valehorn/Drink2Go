@@ -1,0 +1,100 @@
+@use "../common/variables.scss";
+
+.cards__sort {
+  position: relative;
+  display: flex;
+  margin-bottom: 16px;
+  gap: 18px;
+
+  &::after {
+    position: absolute;
+    top: 9px;
+    right: 14px;
+    content: "";
+    width: 10px;
+    height: 6px;
+    mask-image: url("../../icons/stack.svg#arrow-down");
+    mask-repeat: no-repeat;
+    mask-size: 10px 6px;
+    mask-position: center;
+    background-color: $base-primary;
+    pointer-events: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    justify-content: flex-end;
+    margin-bottom: 30px;
+
+    &::after {
+      right: -16px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::after {
+      right: 7px;
+    }
+  }
+}
+
+.cards__sort-title,
+.cards__sort-select {
+  font-size: 16px;
+  line-height: 150%;
+  font-family: $monserrat-semiBold;
+}
+
+.cards__sort-title {
+  @media (min-width: $desktop-width) {
+    margin-right: -19px;
+    z-index: 1;
+  }
+}
+
+.cards__sort-select {
+  color: $base-primary;
+  appearance: none;
+  border: none;
+  background-color: $lightest-grey;
+  width: 165px;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    width: 125px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 165px;
+  }
+}
+
+.cards__list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.cards__item {
+  @media (min-width: $tablet-width) {
+    width: 349px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 317px;
+  }
+}

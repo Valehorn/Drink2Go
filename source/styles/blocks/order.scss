@@ -2,28 +2,17 @@
 
 .order {
   background-color: $lightest-grey;
-  padding-top: 50px;
-  padding-bottom: 36px;
+  padding-top: 20px;
+  padding-bottom: 40px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 80px;
     padding-bottom: 44px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 100px;
-    padding-bottom: 44px;
+    padding-top: 0;
+    padding-bottom: 0;
   }
-}
-
-.order__badge {
-  text-align: center;
-  margin-bottom: 4px;
-}
-
-.order__title {
-  text-align: center;
-  margin-bottom: 20px;
 }
 
 .order__tablet-group {
@@ -37,6 +26,10 @@
   @media (max-width: $pre-tablet) and (min-width: $pre-desktop) {
     display: contents;
   }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+  }
 }
 
 .order__filter-fieldset {
@@ -47,6 +40,12 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
   }
 }
 
@@ -97,7 +96,11 @@
 
   @media (min-width: $tablet-width) {
     display: inline-flex;
-    gap: 0 40px;
+    gap: 0 48px;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 0 50px;
   }
 }
 
@@ -189,5 +192,9 @@
     flex-direction: row;
     justify-content: center;
     gap: 10px 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-content: flex-start;
   }
 }

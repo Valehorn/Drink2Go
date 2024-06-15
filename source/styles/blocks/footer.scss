@@ -6,6 +6,10 @@
   @media (min-width: $tablet-width) {
     padding-top: 42px;
   }
+
+  @media (max-width: $pre-tablet) {
+    overflow: hidden;
+  }
 }
 
 .footer__header {

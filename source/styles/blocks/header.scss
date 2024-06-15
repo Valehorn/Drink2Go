@@ -19,6 +19,8 @@
 }
 
 .header__logo {
+  align-self: flex-start;
+
   @media (min-width: $desktop-width) {
     display: flex;
     gap: 20px;
@@ -177,7 +179,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    gap: 0 60px;
+    gap: 10px 60px;
     max-width: 459px;
   }
 }

@@ -1,29 +1,17 @@
 @use "../common/variables.scss";
 
 .develop-logo-link {
-  /* position: relative; */
-
   @media (min-width: $tablet-width) {
     text-align: center;
     padding-top: 30px;
     padding-bottom: 40px;
   }
 
-  /* &::after {
-    position: absolute;
-    right: -4px;
-    top: 50%;
-    transform: translateY(-50%);
-    content: "";
-    width: 112px;
-    height: 16px;
-    mask-image: url("../../icons/stack.svg#developer-logo");
-    mask-repeat: no-repeat;
-    mask-size: 112px 16px;
-    mask-position: center;
-    background-color: $base-grey;
-    transition: background-color 0.3s ease;
-  } */
+  @media (min-width: $desktop-width) {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 40px;
+  }
 }
 
 .develop-logo-link__text {

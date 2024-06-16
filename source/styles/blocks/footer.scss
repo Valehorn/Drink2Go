@@ -16,6 +16,10 @@
   }
 }
 
+.footer__center {
+  display: grid;
+}
+
 .footer__desktop-nav-wrapper {
   display: contents;
 
@@ -75,4 +79,8 @@
   @media (min-width: $desktop-width) {
     padding-top: 0;
   }
+}
+
+.footer__develop-logo-link {
+  justify-self: center;
 }

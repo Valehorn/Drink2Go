@@ -46,8 +46,8 @@
         <span class="visually-hidden">Кнопка бургер меню</span>
       </button>
       <ul class="header__nav-list nav-list">
-        <li class="header__nav-item header__nav-item--current">
-          <a class="header__nav-link" href="#">Главная</a>
+        <li class="header__nav-item">
+          <a class="header__nav-link header__nav-link--current" href="#">Главная</a>
         </li>
         <li class="header__nav-item">
           <a class="header__nav-link" href="#">Каталог</a>
@@ -227,13 +227,13 @@
         <section class="cards">
           <h2 class="visually-hidden">Каталог товаров</h2>
           <div class="cards__sort">
-            <label class="cards__sort-title" for="sort-select">Сортировка:</label>
             <select class="cards__sort-select" name="sort-select" id="sort-select">
               <option value="default" selected>по умолчанию</option>
               <option value="price bigger">дешевле</option>
               <option value="price lower">дороже</option>
               <option value="popular">популярные</option>
             </select>
+            <label class="cards__sort-title" for="sort-select">Сортировка:</label>
           </div>
           <ul class="cards__list">
             <li class="cards__item">

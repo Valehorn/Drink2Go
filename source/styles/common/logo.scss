@@ -1,8 +1,6 @@
 @use "./variables.scss";
 
 .logo {
-  transition: opacity 0.5 ease;
-
   &:hover,
   &:focus-visible {
     opacity: 0.5;

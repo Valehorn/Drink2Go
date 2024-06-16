@@ -5,21 +5,17 @@
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  padding-top: 12px;
-  padding-bottom: 12px;
-
-  @media (min-width: $tablet-width) {
-    padding-top: 24px;
-    padding-bottom: 22px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-top: 22px;
-  }
 }
 
 .header__logo {
+  display: flex;
   align-self: flex-start;
+  align-items: center;
+  min-height: 80px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
 
   @media (min-width: $desktop-width) {
     display: flex;
@@ -30,7 +26,7 @@
 .header__nav {
   display: flex;
   flex-wrap: wrap;
-  gap: 0 22px;
+  gap: 0 8px;
   max-width: 200px;
 
   @media (min-width: $tablet-width) {
@@ -47,7 +43,6 @@
 .header__nav-user-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 0 22px;
   list-style: none;
   padding: 0;
   margin: 0;
@@ -58,7 +53,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    gap: 0 60px;
+    gap: 0 20px;
     max-width: 261px;
   }
 }
@@ -68,9 +63,10 @@
   position: relative;
   border: 1px solid transparent;
   background-color: transparent;
-  width: 40px;
-  height: 40px;
+  width: 60px;
+  height: 60px;
   cursor: pointer;
+  transition: color 0.5s ease, background-color 0.5s ease;
 
   &::before {
     position: absolute;
@@ -85,12 +81,40 @@
     mask-size: 16px 16px;
     mask-position: center;
     background-color: $base-black;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.5s ease;
+  }
+
+  &:hover,
+  &:focus-visible {
+    color: $base-primary;
+  }
+
+  &:active {
+    background-color: $base-secondary;
+  }
+
+  &:hover::before,
+  &:focus-visible::before {
+    background-color: $base-primary;
+  }
+
+  &:active::before {
+    background-color: $base-primary;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 41px;
+    height: 80px;
   }
 
   @media (min-width: $desktop-width) {
-    width: auto;
-    height: auto;
+    width: 103px;
+    min-height: 80px;
+    padding-left: 20px;
+  }
+
+  @media (max-width: $pre-tablet) {
+    color: $base-black;
   }
 }
 
@@ -99,7 +123,7 @@
 
   @media (min-width: $desktop-width) {
     &::before {
-      left: -14px;
+      left: 10px;
     }
   }
 }
@@ -109,7 +133,7 @@
 
   @media (min-width: $desktop-width) {
     &::before {
-      left: -14px;
+      left: 10px;
     }
   }
 }
@@ -128,11 +152,13 @@
 
 .header__nav-button-burger {
   position: relative;
+  align-self: center;
   border: 1px solid transparent;
   background-color: transparent;
   width: 40px;
   height: 40px;
   cursor: pointer;
+  transition: background-color 0.5s ease;
 
   &::before {
     position: absolute;
@@ -150,6 +176,10 @@
     transition: background-color 0.3s ease;
   }
 
+  &:active {
+    background-color: $primary-opacity;
+  }
+
   @media (min-width: $tablet-width) {
     display: none;
   }
@@ -163,23 +193,49 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     flex-wrap: wrap;
-    gap: 0 40px;
     max-width: 399px;
   }
 
   @media (min-width: $desktop-width) {
-    gap: 10px 60px;
+    gap: 0 15px;
     max-width: 459px;
   }
 }
 
 .header__nav-link {
+  display: flex;
+  justify-content: center;
   font-family: $monserrat-medium;
   font-size: 12px;
   line-height: 133%;
   text-transform: uppercase;
   color: $base-black;
   cursor: pointer;
+  transition: color 0.5s ease, background-color 0.5s ease;
+
+  @media (min-width: $tablet-width) {
+    width: 99px;
+    min-height: 80px;
+    padding: 32px 5px;
+  }
+
+  &:hover,
+  &:focus-visible {
+    color: $base-primary;
+  }
+
+  &:active {
+    background-color: $base-secondary;
+  }
+
+  @media (max-width: $pre-tablet) {
+    color: $base-black;
+  }
+}
+
+.header__nav-link--current {
+  color: $base-primary;
+  border-bottom: 2px solid $base-primary;
 }

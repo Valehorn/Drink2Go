@@ -241,7 +241,7 @@
   &:disabled:hover,
   &:disabled:focus-visible {
     background-color: $light-grey;
-    outline: none;
+    outline: 1px solid transparent;
     cursor: auto;
   }
 

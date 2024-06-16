@@ -1,0 +1,1 @@
+var r=document.querySelector(".order__filter-slider");noUiSlider.create(r,{range:{min:0,max:1e3},start:[0,900],step:10,connect:!0,format:{to:function(e){return e},from:function(e){return parseInt(e,10)}}});var t=e=>{let o=document.querySelector("#price-from"),n=document.querySelector("#price-to");e=r.noUiSlider.get(!0),o.value=e[0],n.value=e[1]};r.noUiSlider.on("update",t);

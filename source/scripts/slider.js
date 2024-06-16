@@ -8,6 +8,14 @@ noUiSlider.create(sliderElement, {
   start: [0, 900],
   step: 10,
   connect: true,
+  format: {
+    to: function (value) {
+      return value;
+    },
+    from: function (value) {
+      return parseInt(value, 10);
+    }
+  }
 });
 
 export {sliderElement };

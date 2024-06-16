@@ -5,6 +5,10 @@
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+
+  @media (max-width: $pre-tablet) {
+    position: relative;
+  }
 }
 
 .header__logo {
@@ -114,7 +118,9 @@
   }
 
   @media (max-width: $pre-tablet) {
-    color: $base-black;
+    &:active::before {
+      background-color: $base-black;
+    }
   }
 }
 
@@ -151,6 +157,8 @@
 }
 
 .header__nav-button-burger {
+  --burger-icon: 0;
+
   position: relative;
   align-self: center;
   border: 1px solid transparent;
@@ -168,7 +176,7 @@
     content: "";
     width: 16px;
     height: 16px;
-    mask-image: url("../../icons/stack.svg#burger-menu");
+    mask-image: var(--burger-icon);
     mask-repeat: no-repeat;
     mask-size: 16px 16px;
     mask-position: center;
@@ -185,8 +193,51 @@
   }
 }
 
+.header__nav-button-burger--open {
+  --burger-icon: url("../../icons/stack.svg#burger-menu");
+}
+
+.header__nav-button-burger--close {
+  --burger-icon: url("../../icons/stack.svg#burger-menu-close-icon");
+}
+
+.header__nav-wrapper {
+  @media (min-width: $tablet-width) {
+    display: contents;
+  }
+
+  @media (max-width: $pre-tablet) {
+    display: none;
+  }
+}
+
+.header__nav-wrapper--open {
+  @media (max-width: $pre-tablet) {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: block;
+    background-color: $base-white;
+    z-index: 1;
+  }
+
+  @media (max-width: $pre-tablet) {
+    & .header__nav-item {
+      border-bottom: 1px solid $base-secondary;
+    }
+
+    & .header__nav-item:first-child {
+      border-top: 1px solid $base-secondary;
+    }
+
+    & .header__nav-link {
+      padding: 20px 0;
+    }
+  }
+}
+
 .header__nav-list {
-  display: none;
   list-style: none;
   padding: 0;
   margin: 0;
@@ -211,6 +262,8 @@
   font-size: 12px;
   line-height: 133%;
   text-transform: uppercase;
+  width: 320px;
+  min-height: 57px;
   color: $base-black;
   cursor: pointer;
   transition: color 0.5s ease, background-color 0.5s ease;
@@ -231,11 +284,15 @@
   }
 
   @media (max-width: $pre-tablet) {
-    color: $base-black;
+    &:active {
+      color: $base-black;
+    }
   }
 }
 
 .header__nav-link--current {
-  color: $base-primary;
-  border-bottom: 2px solid $base-primary;
+  @media (min-width: $tablet-width) {
+    color: $base-primary;
+    border-bottom: 2px solid $base-primary;
+  }
 }

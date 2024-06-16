@@ -12,15 +12,19 @@ html {
 }
 
 body {
-  /* display: flex;
+  display: flex;
   flex-direction: column;
-  min-height: 100%; */
+  min-height: 100%;
   background-color: $base-white;
   font-family: $monserrat-regular;
   font-size: $font-size-primary-mobile;
   line-height: $line-height-primary-mobile;
   color: $base-black;
   margin: 0;
+}
+
+main {
+  flex-grow: 1;
 }
 
 img {

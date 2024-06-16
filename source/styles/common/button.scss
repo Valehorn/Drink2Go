@@ -9,15 +9,34 @@
   text-align: center;
   padding: 8px 20px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.5s ease, color 0.5s ease;
+
+  &:hover,
+  &:focus-visible {
+    background-color: $primary-lighter;
+    color: $base-white;
+  }
+
+  &:active {
+    background-color: $primary-darker;
+  }
 }
 
 .button--primary {
   background-color: $base-primary;
   color: $base-white;
+
+  &:disabled {
+    background-color: $base-grey;
+  }
 }
 
 .button--secondary {
   background-color: $base-white;
   color: $base-primary;
+
+  &:disabled {
+    background-color: $light-grey;
+    color: $base-white;
+  }
 }

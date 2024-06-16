@@ -124,6 +124,17 @@
   padding: 8px 10px;
   width: 118px;
   height: 40px;
+  transition: border 0.5s ease;
+
+  &:hover,
+  &:focus-visible {
+    border: 2px solid $primary-darker;
+  }
+
+  &:disabled {
+    background-color: $lightest-grey;
+    border: 2px solid $light-grey;
+  }
 
   &::placeholder {
     color: $base-grey;
@@ -152,7 +163,30 @@
   width: 24px;
   height: 24px;
   border-radius: 100%;
-  border: 2px solid $base-primary;
+  border: 2px solid $base-grey;
+  transition: border 0.7s ease, background-color 0.7s ease;
+
+  &:checked {
+    border: 2px solid $base-primary;
+  }
+
+  &:hover,
+  &:focus-visible {
+    border: 2px solid $primary-lighter;
+    outline: 1px solid transparent;
+  }
+
+  &:hover:not(:disabled)::after,
+  &:focus-visible:not(:disabled)::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translate(11%, -50%);
+    width: 16px;
+    height: 16px;
+    border-radius: 100%;
+    background-color: $primary-opacity;
+  }
 
   &:checked::after {
     content: "";

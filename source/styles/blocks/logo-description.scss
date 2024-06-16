@@ -1,0 +1,13 @@
+@use "../common/variables.scss";
+
+.logo-description {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    color: $base-black;
+    font-size: 12px;
+    line-height: 133%;
+    margin: 0;
+  }
+}

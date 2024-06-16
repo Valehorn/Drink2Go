@@ -8,4 +8,4 @@ const onSliderUpdate = (sliderValue) => {
   priceInputTo.value = sliderValue[1];
 };
 
-sliderElement.noUiSlider.on('update', onSliderUpdate);
+export {onSliderUpdate};

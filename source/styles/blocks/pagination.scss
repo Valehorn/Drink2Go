@@ -54,6 +54,11 @@
       mask-position: center;
       background-color: $base-primary;
     }
+
+    &:hover::after,
+    &:focus-visible::after {
+      background-color: $base-white;
+    }
   }
 }
 

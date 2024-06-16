@@ -129,6 +129,7 @@
   height: 656px;
   background-color: transparent;
   border: 1px solid transparent;
+  z-index: 1;
 
 
   &:hover,
@@ -232,7 +233,18 @@
     background-color: $base-white;
     width: 62px;
     height: 4px;
+    transition: background-color 1s ease;
     cursor: pointer;
+
+    &:hover,
+    &:focus-visible {
+      background-color: $primary-opacity;
+      outline: 1px solid $primary-opacity;
+    }
+  }
+
+  &:active {
+    background-color: $base-primary;
   }
 }
 

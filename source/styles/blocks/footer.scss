@@ -57,6 +57,12 @@
   }
 }
 
+.footer__social-list {
+  @media (min-width: $desktop-width) {
+    transform: translateX(-10px);
+  }
+}
+
 
 .footer__nav {
   @media (min-width: $tablet-width) {

@@ -15,9 +15,19 @@
   position: relative;
   width: 40px;
   height: 40px;
+  transition: background-color 0.3s ease;
   list-style: none;
   padding: 0;
   margin: 0;
+
+  &:hover,
+  &:focus-visible {
+    background-color: $base-secondary;
+  }
+
+  &:active {
+    background-color: $primary-opacity;
+  }
 
   &::before {
     position: absolute;
@@ -35,11 +45,9 @@
     transition: background-color 0.3s ease;
   }
 
-  @media (min-width: $desktop-width) {
-    &::before {
-      left: auto;
-      transform: translate(0, -50%);
-    }
+  &:hover::before,
+  &:focus-visible::before {
+    background-color: $base-primary;
   }
 }
 

@@ -78,7 +78,7 @@
 }
 
 .order__filter-title--price {
-  margin-bottom: 30px;
+  margin-bottom: 29px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 30px;
@@ -360,5 +360,9 @@
 }
 
 .order__filter-slider {
-  margin-bottom: 32px;
+  margin-bottom: 37px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 32px;
+  }
 }

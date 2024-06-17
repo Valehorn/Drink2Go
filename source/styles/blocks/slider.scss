@@ -14,7 +14,7 @@
   @media (min-width: $desktop-width) {
     flex-direction: row;
     align-items: center;
-    gap: 0 30px;
+    gap: 0 81px;
     text-align: start;
   }
 }
@@ -32,6 +32,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    transform: translateX(62px);
     margin: 0;
   }
 }
@@ -46,6 +47,12 @@
 .slider__text-elemnts-wrapper {
   @media (max-width: $pre-desktop) {
     display: contents;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    padding-bottom: 9px;
+    padding-left: 15px;
   }
 }
 
@@ -77,6 +84,10 @@
     font-size: 20px;
     line-height: 160%;
     margin-bottom: 17px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 41px;
   }
 
   @media (max-width: $pre-tablet) {
@@ -164,6 +175,10 @@
     @media (min-width: $tablet-width) {
       top: 51%;
       left: 49%;
+    }
+
+    @media (min-width: $tablet-width) {
+      top: 50%;
     }
   }
 

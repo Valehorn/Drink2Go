@@ -12,7 +12,8 @@
   <link rel="preload" href="fonts/montserrat/montserrat-regular.woff2" type="font/woff2" as="font"
     crossorigin="anonymous">
   <link rel="preload" href="fonts/montserrat/montserrat-bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
-  <link rel="preload" href="fonts/montserrat/montserrat-semibold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/montserrat/montserrat-semibold.woff2" type="font/woff2" as="font"
+    crossorigin="anonymous">
   <link rel="preload" href="fonts/montserrat/montserrat-medium.woff2" type="font/woff2" as="font"
     crossorigin="anonymous">
   <script src="./vendor/nouislider/nouislider.js" defer></script>
@@ -67,65 +68,67 @@
   <main>
     <h1 class="visually-hidden">Главная магазина кофе Drink2Go</h1>
     <section class="hero" data-test="hero">
-      <div class="container">
-        <h2 class="visually-hidden">Меню слайдера</h2>
-        <div class="slider">
-          <button class="slider__button slider-button-next slider__button--previous" type="button">
-            <span class="visually-hidden">Кнопка слайдера выбора товара назад</span>
-          </button>
-          <button class="slider__button slider-button-next slider__button--next" type="button">
-            <span class="visually-hidden">Кнопка слайдера выбора товара вперед</span>
-          </button>
-          <div class="slider__picture">
-            <picture>
-              <source type="image/webp" media="(min-width: 1440px)"
-                srcset="images/hero-image-desktop@1x.webp 1x, images/hero-image-desktop@2x.webp 2x" width="600"
-                height="600">
-              <source type="image/webp" media="(min-width: 768px)"
-                srcset="images/hero-image-tablet@1x.webp 1x, images/hero-image-tablet@2x.webp 2x" width="476"
-                height="476">
-              <source type="image/png" media="(min-width: 1440px)"
-                srcset="images/hero-image-desktop@1x.png 1x, images/hero-image-desktop@2x.png 2x" width="600"
-                height="600">
-              <source type="image/png" media="(min-width: 768px)"
-                srcset="images/hero-image-tablet@1x.png 1x, images/hero-image-tablet@2x.png 2x" width="476"
-                height="476">
-              <source type="image/webp" media="(max-width: 767px)"
-                srcset="images/hero-image-mobile@1x.webp 1x, images/hero-image-mobile@2x.webp 2x" width="280"
-                height="270">
-              <img class="slider__image" src="images/hero-image-mobile@1x.png"
-                srcset="images/hero-image-mobile@2x.png 2x" width="280" height="280" alt="Кофе Flat White">
-            </picture>
-          </div>
-          <div class="slider__text-elemnts-wrapper">
-            <p class="slider__badge badge">Новинка!</p>
-            <h2 class="slider__product-title">Декаф Флэт Уайт</h2>
-            <p class="slider__product-description">Свежесваренный кофе без кофеина из Эфиопии<br>с натуральным
-              фермерским
-              молоком — то, что нужно<br>для расслабления после тяжёлого рабочего дня</p>
-            <div class="slider__product-price">
-              <p class="slider__product-old-price">295<span>&#8381;</span></p>
-              <p class="slider__product-new-price price">235<span>&#8381;</span></p>
-              <a class="slider__order-button button button--primary" href="#order">Заказать</a>
+      <div class="hero__wrapper">
+        <div class="container">
+          <h2 class="visually-hidden">Меню слайдера</h2>
+          <div class="slider">
+            <button class="slider__button slider-button-next slider__button--previous" type="button">
+              <span class="visually-hidden">Кнопка слайдера выбора товара назад</span>
+            </button>
+            <button class="slider__button slider-button-next slider__button--next" type="button">
+              <span class="visually-hidden">Кнопка слайдера выбора товара вперед</span>
+            </button>
+            <div class="slider__picture">
+              <picture>
+                <source type="image/webp" media="(min-width: 1440px)"
+                  srcset="images/hero-image-desktop@1x.webp 1x, images/hero-image-desktop@2x.webp 2x" width="600"
+                  height="600">
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="images/hero-image-tablet@1x.webp 1x, images/hero-image-tablet@2x.webp 2x" width="476"
+                  height="476">
+                <source type="image/png" media="(min-width: 1440px)"
+                  srcset="images/hero-image-desktop@1x.png 1x, images/hero-image-desktop@2x.png 2x" width="600"
+                  height="600">
+                <source type="image/png" media="(min-width: 768px)"
+                  srcset="images/hero-image-tablet@1x.png 1x, images/hero-image-tablet@2x.png 2x" width="476"
+                  height="476">
+                <source type="image/webp" media="(max-width: 767px)"
+                  srcset="images/hero-image-mobile@1x.webp 1x, images/hero-image-mobile@2x.webp 2x" width="280"
+                  height="270">
+                <img class="slider__image" src="images/hero-image-mobile@1x.png"
+                  srcset="images/hero-image-mobile@2x.png 2x" width="280" height="280" alt="Кофе Flat White">
+              </picture>
             </div>
+            <div class="slider__text-elemnts-wrapper">
+              <p class="slider__badge badge">Новинка!</p>
+              <h2 class="slider__product-title">Декаф Флэт Уайт</h2>
+              <p class="slider__product-description">Свежесваренный кофе без кофеина из Эфиопии<br>с натуральным
+                фермерским
+                молоком — то, что нужно<br>для расслабления после тяжёлого рабочего дня</p>
+              <div class="slider__product-price">
+                <p class="slider__product-old-price">295<span>&#8381;</span></p>
+                <p class="slider__product-new-price price">235<span>&#8381;</span></p>
+                <a class="slider__order-button button button--primary" href="#order">Заказать</a>
+              </div>
+            </div>
+            <ul class="slider__pagination-list slider-pagination">
+              <li class="slider__pagination-item slider__pagination-item--current">
+                <button class="slider__pagination-button" type="button">
+                  <span class="visually-hidden">Слайд 1</span>
+                </button>
+              </li>
+              <li class="slider__pagination-item">
+                <button class="slider__pagination-button" type="button">
+                  <span class="visually-hidden">Слайд 2</span>
+                </button>
+              </li>
+              <li class="slider__pagination-item">
+                <button class="slider__pagination-button" type="button">
+                  <span class="visually-hidden">Слайд 3</span>
+                </button>
+              </li>
+            </ul>
           </div>
-          <ul class="slider__pagination-list slider-pagination">
-            <li class="slider__pagination-item slider__pagination-item--current">
-              <button class="slider__pagination-button" type="button">
-                <span class="visually-hidden">Слайд 1</span>
-              </button>
-            </li>
-            <li class="slider__pagination-item">
-              <button class="slider__pagination-button" type="button">
-                <span class="visually-hidden">Слайд 2</span>
-              </button>
-            </li>
-            <li class="slider__pagination-item">
-              <button class="slider__pagination-button" type="button">
-                <span class="visually-hidden">Слайд 3</span>
-              </button>
-            </li>
-          </ul>
         </div>
       </div>
     </section>
@@ -506,7 +509,8 @@
             srcset="images/map/map-tablet@1x.png 1x, images/map/map-desktop@2x.png 2x" width="768" height="480">
           <source type="image/webp" media="(max-width: 767px)"
             srcset="images/map/map-mobile@1x.webp 1x, images/map/map-mobile@2x.webp 2x" width="320" height="420">
-          <img class="map__image" src="images/map/map-desktop@1x.png" alt="Карта" width="320" height="420" loading="lazy">
+          <img class="map__image" src="images/map/map-desktop@1x.png" alt="Карта" width="320" height="420"
+            loading="lazy">
         </picture>
       </div>
     </section>
@@ -591,7 +595,8 @@
           </div>
         </nav>
       </div>
-      <a class="footer__develop-logo-link develop-logo-link footer-element-mobile footer-element-mobile--align-pp" href="https://htmlacademy.ru/intensive/adaptive">
+      <a class="footer__develop-logo-link develop-logo-link footer-element-mobile footer-element-mobile--align-pp"
+        href="https://htmlacademy.ru/intensive/adaptive">
         <span class="develop-logo-link__text">Разработано в HTML Academy</span>
       </a>
     </div>

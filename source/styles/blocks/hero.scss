@@ -1,9 +1,24 @@
 @use "../common/variables.scss";
 
 .hero {
-  background-color: $flat-white;
+  padding-bottom: 246px;
+  /* background-color: $flat-white;
   padding-bottom: 60px;
   padding-top: 18px;
+
+  @media (min-width: $tablet-width) and (max-width: $pre-desktop) {
+    min-height: 640px;
+    padding-top: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 30px;
+    padding-bottom: 84px;
+  } */
+}
+
+.hero__wrapper {
+  background-color: $flat-white;
 
   @media (min-width: $tablet-width) and (max-width: $pre-desktop) {
     min-height: 640px;

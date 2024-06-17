@@ -39,6 +39,13 @@
   }
 }
 
+.header__logo-description {
+  @media (min-width: $desktop-width) {
+    font-size: 12px;
+    line-height: 133%;
+  }
+}
+
 .header__nav {
   display: flex;
   flex-wrap: wrap;
@@ -66,12 +73,12 @@
 
   @media (min-width: $tablet-width) {
     gap: 0 18px;
-    max-width: 120px;
+    max-width: 109px;
   }
 
   @media (min-width: $desktop-width) {
     gap: 0 35px;
-    max-width: 261px;
+    max-width: 251px;
   }
 }
 

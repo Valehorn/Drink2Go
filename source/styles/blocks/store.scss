@@ -1,5 +1,11 @@
 @use "../common/variables.scss";
 
+.store {
+  @media (min-width: $desktop-width) {
+    padding-top: 24px;
+  }
+}
+
 .store__badge {
   font-family: $monserrat-bold;
   font-weight: 700;

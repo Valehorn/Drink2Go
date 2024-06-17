@@ -8,7 +8,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 40px;
+    padding-top: 21px;
   }
 
   @media (max-width: $pre-tablet) {
@@ -59,7 +59,8 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
-    gap: 50px;
+    gap: 46px;
+    padding-bottom: 0;
   }
 }
 
@@ -76,12 +77,12 @@
   }
 }
 
-.footer__social-list {
+.footer_logo-description {
   @media (min-width: $desktop-width) {
-    transform: translateX(-10px);
+    font-size: 14px;
+    line-height: 143%;
   }
 }
-
 
 .footer__nav {
   @media (min-width: $tablet-width) {
@@ -92,6 +93,8 @@
   }
 
   @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(3, 347px);
+    gap: 5px 0;
     padding-top: 0;
   }
 }

@@ -1,5 +1,11 @@
 @use "../common/variables.scss";
 
+.contacts {
+  @media (min-width: $desktop-width) {
+    padding-top: 24px;
+  }
+}
+
 .contacts__badge {
   font-family: $monserrat-bold;
   font-weight: 700;
@@ -22,6 +28,10 @@
 
   @media (min-width: $tablet-width) {
     max-width: 223px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: none;
   }
 }
 

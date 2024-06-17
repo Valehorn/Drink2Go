@@ -42,10 +42,10 @@
           </button>
         </li>
       </ul>
-      <button class="header__nav-button-burger js-toggle-button header__nav-button-burger--close" type="button">
+      <button class="header__nav-button-burger js-toggle-button header__nav-button-burger--open" type="button">
         <span class="visually-hidden">Кнопка бургер меню</span>
       </button>
-      <div class="header__nav-wrapper header__nav-wrapper--open">
+      <div class="header__nav-wrapper">
         <ul class="header__nav-list nav-list">
           <li class="header__nav-item">
             <a class="header__nav-link header__nav-link--current" href="#">Главная</a>
@@ -173,7 +173,7 @@
                 </div>
               </fieldset>
               <fieldset class="order__filter-fieldset order__filter-fieldset--milk">
-                <legend class="order__filter-title">Наличие молока</legend>
+                <legend class="order__filter-title order__filter-title--milk">Наличие молока</legend>
                 <ul class="order__milk-list">
                   <li class="order__milk-item">
                     <input class="order__input-radio" type="radio" id="any-milk" name="milk" value="any-milk" checked>
@@ -196,7 +196,7 @@
                 </ul>
               </fieldset>
               <fieldset class="order__filter-fieldset order__filter-fieldset--country">
-                <legend class="order__filter-title">Страна произрастания</legend>
+                <legend class="order__filter-title order__filter-title--country">Страна произрастания</legend>
                 <ul class="order__country-list">
                   <li class="order__country-item">
                     <input class="order__input-switch" type="checkbox" id="brazil" name="Brazil" checked>
@@ -590,7 +590,7 @@
           </div>
         </nav>
       </div>
-      <a class="footer__develop-logo-link develop-logo-link footer-element-mobile" href="https://htmlacademy.ru/">
+      <a class="footer__develop-logo-link develop-logo-link footer-element-mobile footer-element-mobile--align-pp" href="https://htmlacademy.ru/">
         <span class="develop-logo-link__text">Разработано в HTML Academy</span>
       </a>
     </div>

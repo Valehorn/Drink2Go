@@ -64,13 +64,20 @@
 }
 
 .order__filter-label--switch {
-  position: relative;
-  padding-left: 60px;
+  padding-left: 50px;
 }
 
 .order__filter-title {
   font-family: $monserrat-semiBold;
-  margin-bottom: 20px;
+  margin-bottom: 27px;
+}
+
+.order__filter-title--milk {
+  margin-bottom: 19px;
+}
+
+.order__filter-title--country {
+  margin-bottom: 19px;
 }
 
 .order__milk-item {
@@ -91,7 +98,7 @@
   position: relative;
   display: flex;
   flex-wrap: wrap;
-  gap: 0 36px;
+  gap: 0 42px;
 
   &::after {
     position: absolute;
@@ -159,7 +166,7 @@
 .order__input-radio {
   position: absolute;
   top: 40%;
-  transform: translate(-50%, -50%);
+  transform: translate(-61%, -50%);
   appearance: none;
   width: 24px;
   height: 24px;
@@ -216,6 +223,8 @@
 }
 
 .order__country-item {
+  position: relative;
+
   &:not(:last-child) {
     margin-bottom: 20px;
   }
@@ -223,6 +232,8 @@
 
 .order__input-switch {
   position: absolute;
+  top: -2px;
+  left: -4px;
   appearance: none;
   border-radius: 12px;
   width: 42px;
@@ -281,6 +292,8 @@
 }
 
 .order__button {
+  font-size: 16px;
+  line-height: 150%;
   min-width: 280px;
 
   @media (min-width: $tablet-width) {
@@ -309,5 +322,5 @@
 }
 
 .order__filter-slider {
-  margin-bottom: 30px;
+  margin-bottom: 37px;
 }

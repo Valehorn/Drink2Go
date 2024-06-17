@@ -1,11 +1,11 @@
 import { sliderElement } from './slider';
 
-const onSliderUpdate = (sliderValue) => {
+const onSliderUpdate = () => {
   const priceInputFrom = document.querySelector('#price-from');
   const priceInputTo = document.querySelector('#price-to');
-  sliderValue = sliderElement.noUiSlider.get(true);
-  priceInputFrom.value = sliderValue[0];
-  priceInputTo.value = sliderValue[1];
+  const [valueLower, valueUpper] = sliderElement.noUiSlider.get(true);
+  priceInputFrom.value = valueLower;
+  priceInputTo.value = valueUpper;
 };
 
 export {onSliderUpdate};

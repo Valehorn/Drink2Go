@@ -93,7 +93,7 @@
    border: 2px solid #9070ec;
    right: -17px;
    top: 50%;
-   transform: translateY(-50%);
+   transform: translateY(-43%);
    transition: border 0.5 ease;
  }
 
@@ -106,7 +106,7 @@
   content: "";
   width: 16px;
   height: 16px;
-  background-color: rgba(120, 89, 207, 0.25);
+  background-color: rgba(74, 20, 224, 0.25);
   border-radius: 100%;
  }
 

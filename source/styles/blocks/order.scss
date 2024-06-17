@@ -34,7 +34,7 @@
   border: 1px solid transparent;
   padding: 0;
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 29px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
@@ -87,6 +87,10 @@
 
 .order__filter-title--milk {
   margin-bottom: 19px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 23px;
+  }
 }
 
 .order__filter-title--country {
@@ -356,5 +360,5 @@
 }
 
 .order__filter-slider {
-  margin-bottom: 37px;
+  margin-bottom: 32px;
 }

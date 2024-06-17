@@ -10,7 +10,7 @@
 }
 
 .card__picture {
-  margin-bottom: 24px;
+  margin-bottom: 28px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 30px;
@@ -37,7 +37,7 @@
   margin-bottom: 15px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 20px;
+    margin-bottom: 17px;
   }
 }
 
@@ -48,6 +48,12 @@
   @media (min-width: $tablet-width) {
     gap: 0;
     justify-content: space-between;
+  }
+}
+
+.card__price {
+  @media (min-width: $desktop-width) {
+    padding-top: 6px;
   }
 }
 

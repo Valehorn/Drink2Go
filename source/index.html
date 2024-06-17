@@ -12,8 +12,7 @@
   <link rel="preload" href="fonts/montserrat/montserrat-regular.woff2" type="font/woff2" as="font"
     crossorigin="anonymous">
   <link rel="preload" href="fonts/montserrat/montserrat-bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
-  <link href="fonts/montserrat/montserrat-semibold.woff2" type="font/woff2" as="font"
-    crossorigin="anonymous">
+  <link rel="preload" href="fonts/montserrat/montserrat-semibold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/montserrat/montserrat-medium.woff2" type="font/woff2" as="font"
     crossorigin="anonymous">
   <script src="./vendor/nouislider/nouislider.js" defer></script>
@@ -67,10 +66,10 @@
   </header>
   <main>
     <h1 class="visually-hidden">Главная магазина кофе Drink2Go</h1>
-    <section class="hero">
+    <section class="hero" data-test="hero">
       <div class="container">
         <h2 class="visually-hidden">Меню слайдера</h2>
-        <div class="slider slider-pagination">
+        <div class="slider">
           <button class="slider__button slider-button-next slider__button--previous" type="button">
             <span class="visually-hidden">Кнопка слайдера выбора товара назад</span>
           </button>
@@ -110,7 +109,7 @@
               <a class="slider__order-button button button--primary" href="#order">Заказать</a>
             </div>
           </div>
-          <ul class="slider__pagination-list">
+          <ul class="slider__pagination-list slider-pagination">
             <li class="slider__pagination-item slider__pagination-item--current">
               <button class="slider__pagination-button" type="button">
                 <span class="visually-hidden">Слайд 1</span>
@@ -525,7 +524,7 @@
               <img class="footer__logo-image" src="images/logo-drink2go-tablet.svg" width="82" height="36"
                 alt="Логотип Drink2Go.">
             </picture>
-            <p class="footer_logo-description logo-description">Интернет-магазин кофейных напитков</p>
+            <p class="footer__logo-description logo-description">Интернет-магазин кофейных напитков</p>
           </a>
           <ul class="footer__social-list social-list">
             <li class="social-list__item">
@@ -592,7 +591,7 @@
           </div>
         </nav>
       </div>
-      <a class="footer__develop-logo-link develop-logo-link footer-element-mobile footer-element-mobile--align-pp" href="https://htmlacademy.ru/">
+      <a class="footer__develop-logo-link develop-logo-link footer-element-mobile footer-element-mobile--align-pp" href="https://htmlacademy.ru/intensive/adaptive">
         <span class="develop-logo-link__text">Разработано в HTML Academy</span>
       </a>
     </div>

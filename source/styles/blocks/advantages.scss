@@ -6,7 +6,7 @@
   text-align: center;
 
   @media (min-width: $tablet-width) and (max-width: $pre-desktop) {
-    padding: 240px 30px 100px;
+    padding: 246px 30px 77px;
   }
 
   @media (min-width: $desktop-width) {
@@ -39,7 +39,7 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 50px 30px;
+    gap: 3px 30px;
   }
 
   @media (min-width: $desktop-width) {
@@ -78,10 +78,13 @@
     }
   }
 
+  @media (min-width) {
+    padding-top: 0;
+  }
+
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-rows: 1fr;
-    padding-top: 76px;
     gap: 10px;
   }
 

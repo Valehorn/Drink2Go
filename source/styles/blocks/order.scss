@@ -2,11 +2,12 @@
 
 .order {
   background-color: $lightest-grey;
-  padding-top: 20px;
+  padding-top: 24px;
   padding-bottom: 40px;
 
   @media (min-width: $tablet-width) {
     padding-bottom: 44px;
+    padding-top: 21px;
   }
 
   @media (min-width: $desktop-width) {
@@ -65,11 +66,22 @@
 
 .order__filter-label--switch {
   padding-left: 50px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 59px;
+  }
 }
 
 .order__filter-title {
   font-family: $monserrat-semiBold;
+}
+
+.order__filter-title--price {
   margin-bottom: 27px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 30px;
+  }
 }
 
 .order__filter-title--milk {
@@ -289,6 +301,10 @@
   &:disabled:checked::before {
     background-color: $base-grey;
   }
+
+  @media (min-width: $tablet-width) {
+    left: 3px;
+  }
 }
 
 .order__button {
@@ -303,6 +319,10 @@
   @media (min-width: $desktop-width) {
     min-width: 149px;
   }
+}
+
+.order__button.button--secondary {
+  min-width: 120px;
 }
 
 .order__filter-button-group {

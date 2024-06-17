@@ -76,16 +76,13 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 160%;
+    margin-bottom: 17px;
   }
 
   @media (max-width: $pre-tablet) {
     & br {
       display: none;
     }
-  }
-
-  @media (min-width: $tablet-width) {
-    margin-bottom: 40px;
   }
 }
 
@@ -163,6 +160,11 @@
     mask-size: 11px 20px;
     mask-position: center;
     background-color: $base-primary;
+
+    @media (min-width: $tablet-width) {
+      top: 51%;
+      left: 49%;
+    }
   }
 
   &:disabled::after {

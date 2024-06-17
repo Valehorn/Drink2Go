@@ -69,7 +69,7 @@
 
   @media (min-width: $tablet-width) {
     width: 165px;
-    padding-right: 35px;
+    padding-right: 30px;
   }
 
   @media (min-width: $desktop-width) {
@@ -89,7 +89,7 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
+    gap: 27px;
   }
 
   @media (min-width: $desktop-width) {

@@ -78,13 +78,14 @@
     }
   }
 
-  @media (min-width) {
+  @media (min-width: $tablet-width) {
     padding-top: 0;
   }
 
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-rows: 1fr;
+    padding-top: 75px;
     gap: 10px;
   }
 

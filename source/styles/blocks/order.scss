@@ -2,7 +2,7 @@
 
 .order {
   background-color: $lightest-grey;
-  padding-top: 24px;
+  padding-top: 19px;
   padding-bottom: 40px;
 
   @media (min-width: $tablet-width) {
@@ -16,20 +16,17 @@
   }
 }
 
-.order__tablet-group {
+.order__input-group {
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px 30px;
+    gap: 0 30px;
     margin-bottom: 40px;
-  }
-
-  @media (max-width: $pre-tablet) and (min-width: $pre-desktop) {
-    display: contents;
   }
 
   @media (min-width: $desktop-width) {
     flex-direction: column;
+    margin-bottom: 34px;
   }
 }
 
@@ -69,6 +66,10 @@
 
   @media (min-width: $tablet-width) {
     padding-left: 59px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 53px;
   }
 }
 
@@ -226,6 +227,10 @@
   &:disabled:checked::after {
     background-color: $light-grey;
   }
+
+  @media (min-width: $desktop-width) {
+    transform: translate(-61%, -63%);
+  }
 }
 
 .order__country-list {
@@ -305,6 +310,11 @@
   @media (min-width: $tablet-width) {
     left: 3px;
   }
+
+  @media (min-width: $tablet-width) {
+    top: -7px;
+    left: -5px;
+  }
 }
 
 .order__button {
@@ -323,6 +333,10 @@
 
 .order__button.button--secondary {
   min-width: 120px;
+
+  @media (min-width: $desktop-width) {
+    min-width: 149px;
+  }
 }
 
 .order__filter-button-group {

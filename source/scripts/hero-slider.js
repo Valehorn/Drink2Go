@@ -7,12 +7,12 @@ const heroBg = document.querySelector('.hero__wrapper');
 
 let currentSlideIndex = 0;
 
-function updateBackground(slideIndex) {
+const updateBackground = (slideIndex) => {
   const backgroundColors = ['#f3ebe1', '#eae6fc', '#e5e6e8'];
   heroBg.style.backgroundColor = backgroundColors[slideIndex] || backgroundColors[0];
-}
+};
 
-function onChangeSlide(newIndex) {
+const onChangeSlide = (newIndex) => {
   sliderElement[currentSlideIndex].classList.remove('slider__slide--current');
   paginationButtons[currentSlideIndex].parentNode.classList.remove('slider__pagination-item--current');
 
@@ -21,7 +21,7 @@ function onChangeSlide(newIndex) {
   sliderElement[currentSlideIndex].classList.add('slider__slide--current');
   paginationButtons[currentSlideIndex].parentNode.classList.add('slider__pagination-item--current');
   updateBackground(currentSlideIndex);
-}
+};
 
 prevButton.addEventListener('click', () => {
   const newIndex = (currentSlideIndex - 1 + sliderElement.length) % sliderElement.length;

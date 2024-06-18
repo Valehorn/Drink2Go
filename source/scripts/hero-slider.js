@@ -40,5 +40,4 @@ slider.addEventListener('click', (evt) => {
   }
 });
 
-// Инициализация первого слайда
 export { onChangeSlide };

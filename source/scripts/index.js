@@ -4,11 +4,11 @@ import { burgerToogle, onBurgerMenuEscKeydown, burgerButton } from './burger-men
 import { onChangeSlide } from './hero-slider';
 
 
-const bootstrap = () => {
+const bootstrap = (slideNumber) => {
   sliderElement.noUiSlider.on('update', onSliderUpdate);
   burgerButton.addEventListener('click', burgerToogle);
   burgerButton.addEventListener('keydown', onBurgerMenuEscKeydown);
-  onChangeSlide(0);
+  onChangeSlide(slideNumber);
 };
 
-bootstrap();
+bootstrap(0);

@@ -19,7 +19,7 @@ const onSliderSlide = (values, handle) => {
   }
 };
 
-sliderElement.noUiSlider.on('slide', onSliderSlide);
+sliderElement.noUiSlider.on('update', onSliderSlide);
 
 const onInputFrom = () => {
   sliderElement.noUiSlider.set([priceInputFrom.value, null]);

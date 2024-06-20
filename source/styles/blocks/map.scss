@@ -1,5 +1,23 @@
 @use "../common/variables.scss";
 
+.map__frame {
+  display: block;
+  width: 100%;
+  border: none;
+
+  @media (min-width: $tablet-width) {
+    min-height: 480px;
+  }
+
+  @media (min-width: $tablet-width) {
+    min-height: 540px;
+  }
+}
+
+.map__frame--nojs {
+  display: none;
+}
+
 .map__image {
   object-fit: cover;
 }

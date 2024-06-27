@@ -16,11 +16,7 @@ function onWindowScroll () {
 }
 
 const windowScroll = () => {
-  if (window.pageYOffset > 2300) {
-    window.addEventListener('scroll', onWindowScroll);
-  } else {
-    window.removeEventListener('scroll', onWindowScroll);
-  }
+  window.addEventListener('scroll', onWindowScroll);
 };
 
 

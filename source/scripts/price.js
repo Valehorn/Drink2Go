@@ -10,7 +10,7 @@ const onSliderUpdate = () => {
 };
 
 
-const onSliderSlide = (values, handle) => {
+const onSliderElementUpdate = (values, handle) => {
   const value = values[handle];
   if (handle === 0) {
     priceInputFrom.value = value;
@@ -19,17 +19,17 @@ const onSliderSlide = (values, handle) => {
   }
 };
 
-sliderElement.noUiSlider.on('update', onSliderSlide);
+sliderElement.noUiSlider.on('update', onSliderElementUpdate);
 
-const onInputFrom = () => {
+const onInputFromChange = () => {
   sliderElement.noUiSlider.set([priceInputFrom.value, null]);
 };
 
-const onInputTo = () => {
+const onInputToChange = () => {
   sliderElement.noUiSlider.set([null, priceInputTo.value]);
 };
 
-priceInputFrom.addEventListener('change', onInputFrom);
-priceInputTo.addEventListener('change', onInputTo);
+priceInputFrom.addEventListener('change', onInputFromChange);
+priceInputTo.addEventListener('change', onInputToChange);
 
 export { onSliderUpdate };

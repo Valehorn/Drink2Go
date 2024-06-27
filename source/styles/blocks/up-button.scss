@@ -1,0 +1,47 @@
+@use "../common/variables.scss";
+
+.up-button {
+  position: fixed;
+  z-index: 1;
+  top: 80%;
+  right: 0;
+  display: none;
+  width: 50px;
+  height: 50px;
+  border: 5px solid $base-primary;
+  background-color: $base-white;
+  border-radius: 50%;
+  transition: border-color 0.5s ease;
+  cursor: pointer;
+
+  &::after {
+    content: "↑";
+    width: 30px;
+    height: 30px;
+    font-size: 30px;
+    font-weight: 700;
+    color: $base-primary;
+    transition: color 0.5s ease;
+  }
+
+  &:hover {
+    border-color: $primary-darker;
+  }
+
+  &:hover::after {
+    color: $primary-darker;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 70px;
+    height: 70px;
+
+    &::after {
+      font-size: 40px;
+    }
+  }
+}
+
+.up-button--shown {
+  display: block;
+}

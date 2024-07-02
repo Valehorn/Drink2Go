@@ -20,6 +20,7 @@ body {
   font-size: $font-size-primary-mobile;
   line-height: $line-height-primary-mobile;
   color: $base-black;
+  min-width: $phone-width;
   margin: 0;
 }
 
